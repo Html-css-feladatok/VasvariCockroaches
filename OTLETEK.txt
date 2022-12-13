@@ -1,1 +1,7 @@
 iconok, példák: https://mdbootstrap.com/docs/standard/
+
+https://mdbootstrap.com/docs/standard/navigation/navbar/examples-and-customization/
+
+https://mdbootstrap.com/snippets/standard/mdbootstrap/2949573?view=side
+
+https://lospec.com/palette-list/midnight-ablaze
