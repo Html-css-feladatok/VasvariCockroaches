@@ -5,3 +5,26 @@ https://mdbootstrap.com/docs/standard/navigation/navbar/examples-and-customizati
 https://mdbootstrap.com/snippets/standard/mdbootstrap/2949573?view=side
 
 https://lospec.com/palette-list/midnight-ablaze
+
+
+
+#csillagok
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        .checked {
+            color: orange;
+        }
+
+span{
+    /* Prefix required. Even Firefox only supports the -webkit- prefix */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+
+
+
+
+                    <span class="fa fa-star checked"></span>
+
