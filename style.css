@@ -17,7 +17,6 @@
   font-family: JLight;
   src: url("font/JLight.ttf");
 }
-
 body {
   background-color: #040f0f;
   overflow-x: hidden;
@@ -137,10 +136,31 @@ body {
   font-size: 120px;
   color: #c2fcf7;
 }
+#miertmiszoveg{
+    font-size: 25px;
+    font-family: JMedium;
+    color: white;
+    text-align: justify;
+}
 
-#miertmiszoveg {
-  font-size: 25px;
-  font-family: JMedium;
-  color: white;
-  text-align: justify;
+.termekkep{
+    width: 270px;
+    height: 200px;
+}
+
+.termek{
+    color: #C2FCF7;
+}
+
+.termek,.ar,.leiras{
+    font-family: JMedium;
+}
+
+.ar{
+    font-size: 25px;
+    text-align: center;
+}
+
+.menu-item{
+    border-bottom: 1px solid #C2FCF7;
 }
