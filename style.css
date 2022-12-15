@@ -1,145 +1,166 @@
 @font-face {
-    font-family: JBold;
-    src: url('font/JBold.ttf');
+  font-family: JBold;
+  src: url("font/JBold.ttf");
 }
 
 @font-face {
-    font-family: JEBold;
-    src: url('font/JExtraBold.ttf');
+  font-family: JEBold;
+  src: url("font/JExtraBold.ttf");
 }
 
 @font-face {
-    font-family: JMedium;
-    src: url('font/JMedium.ttf');
+  font-family: JMedium;
+  src: url("font/JMedium.ttf");
 }
 
 @font-face {
-    font-family: JLight;
-    src: url('font/JLight.ttf');
+  font-family: JLight;
+  src: url("font/JLight.ttf");
+}
+body {
+  background-color: #040f0f;
+  overflow-x: hidden;
+  color: white;
 }
 
-body{
-    background-color: #040F0F;
-    overflow-x: hidden;
+#fejresz {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: url("src/hatter.png");
+  background-position: center;
+  background-size: cover;
 }
 
-#fejresz{
-    height: 50vw;
-    width: 100vw;
-    background-image: url('src/hatter.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+#logo {
+  width: 150px;
 }
 
-#logo{
-    width: 150px;
+#textbal {
+  margin-top: 120px;
+  font-family: JEBold;
+  font-size: 110px;
+  line-height: 0.9em;
+  background: -webkit-linear-gradient(#85bdbf, #c2fcf7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  height: 350px;
 }
 
-#textbal{
-    margin-top: 120px;
-    font-family: JEBold;
-    font-size: 110px;
-    line-height: 0.9em;
-    background: -webkit-linear-gradient(#85BDBF,#C2FCF7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    height: 350px;
+#textjobb {
+  text-align: justify;
+  margin-top: 20px;
+  font-family: JMedium;
+  font-size: 25px;
+  color: #c2fcf7;
 }
 
-#textjobb{
-    text-align: justify;
-    margin-top: 20px;
-    font-family: JMedium;
-    font-size: 25px;
-    color: #C2FCF7;
+.navbar-nav {
+  margin: 0 auto;
+  position: sticky;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  padding-top: 0px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.navbar-nav{
-    margin: 0 auto;
-    position: sticky;
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-    padding-top: 0px;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.navbar-nav a {
+  font-size: 30px;
+  margin-left: 50px;
+  font-family: JMedium;
 }
 
-.navbar-nav a{
-    font-size: 30px;
-    margin-left: 50px;
-    font-family: JMedium;
+#navlogo {
+  width: 100px;
 }
 
-#navlogo{
-    width: 100px;
+#kategoriak {
+  margin-top: 70px;
+  margin-bottom: 55px;
+  font-family: JEBold;
+  font-size: 120px;
+  background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-#kategoriak{
-    margin-top: 70px;
-    margin-bottom: 55px;
-    font-family: JEBold;
-    font-size: 120px;
-    background: -webkit-linear-gradient(#246464,#85BDBF,#C2FCF7,#C2FCF7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.navbar-nav a:hover {
+  color: #85bdbf;
 }
 
-.navbar-nav a:hover{
-    color: #85BDBF;
+#kategorialist {
+  border-bottom: 0px;
 }
 
-#kategorialist{
-    border-bottom: 0px;
+#kategorialist a {
+  margin-right: 15px;
+  border: 0px;
+  color: #85bdbf;
+  border-radius: 10px;
 }
 
-#kategorialist a{
-    margin-right: 15px;
-    border: 0px;
-    color: #85BDBF;
-    border-radius: 10px;
-}
-
-#kategorialist a:hover{
-    cursor: pointer;
-    background-color: #246464
+#kategorialist a:hover {
+  cursor: pointer;
+  background-color: #246464;
 }
 
 .checked {
-    background: -webkit-linear-gradient(#ffd000,#ffb700,#ff8800,#ff7b00);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(#ffd000, #ffb700, #ff8800, #ff7b00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.nev{
-    font-family: JBold;
-    color:white;
-    border-bottom: white solid 1px;
-    border-width: 10%;
+.nev {
+  font-family: JBold;
+  color: white;
+  border-bottom: white solid 1px;
+  border-width: 10%;
 }
 
-.ertekeles{
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    font-size: 33px;
+.ertekeles {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 33px;
 }
 
-.ertekeles p{
-    font-family: JMedium;
-    color: white;
-    font-size: 25px;
+.ertekeles p {
+  font-family: JMedium;
+  color: white;
+  font-size: 25px;
 }
 
-#nyil{
-    font-size: 120px;
-    color: #C2FCF7;
+#nyil {
+  font-size: 120px;
+  color: #c2fcf7;
 }
-
 #miertmiszoveg{
     font-size: 25px;
     font-family: JMedium;
     color: white;
     text-align: justify;
+}
+
+.termekkep{
+    width: 270px;
+    height: 200px;
+}
+
+.termek{
+    color: #C2FCF7;
+}
+
+.termek,.ar,.leiras{
+    font-family: JMedium;
+}
+
+.ar{
+    font-size: 25px;
+    text-align: center;
+}
+
+.menu-item{
+    border-bottom: 1px solid #C2FCF7;
 }
