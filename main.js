@@ -1,11 +1,11 @@
 window.onload = document.body.style.overflow = "hidden";
 
 if (history.scrollRestoration) {
-  history.scrollRestoration = 'manual';
+  history.scrollRestoration = "manual";
 } else {
   window.onbeforeunload = function () {
-      window.scrollTo(0, 0);
-  }
+    window.scrollTo(0, 0);
+  };
 }
 
 function scrolling() {
@@ -13,5 +13,3 @@ function scrolling() {
   //document.getElementById("fejresz").style.display = "none";
   //document.getElementById("tartalom").style.opacity = "1";
 }
-
-
