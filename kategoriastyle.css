@@ -64,9 +64,6 @@ body {
 
 .ar{
     font-size: 25px;
-    text-align: center;
-}
-
-.menu-item{
+    text-align: left;
     border-bottom: 1px solid #C2FCF7;
 }
