@@ -108,19 +108,38 @@ body{
 }
 
 .checked {
-    background: -webkit-linear-gradient(#85BDBF,#C2FCF7);
+    background: -webkit-linear-gradient(#ffd000,#ffb700,#ff8800,#ff7b00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+.nev{
+    font-family: JBold;
+    color:white;
+    border-bottom: white solid 1px;
+    border-width: 10%;
+}
+
 .ertekeles{
--webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: black;
-font-size: 33px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 33px;
 }
 
 .ertekeles p{
     font-family: JMedium;
-    color:#C2FCF7;
+    color: white;
     font-size: 25px;
+}
+
+#nyil{
+    font-size: 120px;
+    color: #C2FCF7;
+}
+
+#miertmiszoveg{
+    font-size: 25px;
+    font-family: JMedium;
+    color: white;
+    text-align: justify;
 }
