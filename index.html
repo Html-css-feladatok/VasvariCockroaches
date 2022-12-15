@@ -16,26 +16,26 @@
     <title>webshop</title>
 </head>
 <body>
-
-    <div id="fejresz" class="container-fluid" data-aos="fade-out" data-aos-delay="250">
+    <!--Fejrész-->
+    <div id="fejresz" class="container-fluid" data-aos="fade-in" data-aos-delay="200">
         <div class="container text-center" data-aos="fade-up"><img id="logo" class="mt-5"src="src/logo.png" alt=""></div>
     <div class="container mt-5">
         <div class="row">
             <div class="col-6">
-                <p data-aos="fade-up" id="textbal">Mit<br>kínálunk?</p>
+                <p data-aos="fade-right" id="textbal">Mit<br>kínálunk?</p>
             </div>
             <div class="col-1" style="position:rl"></i></div>
             <div class="col-5">
-                <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" id="textjobb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur natus corrupti corporis quaerat, dolore repellat sint rerum facilis ex eaque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione provident velit eius, qui nihil quis.</p>
+                <p data-aos="fade-left" data-aos-anchor-placement="bottom-bottom" id="textjobb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur natus corrupti corporis quaerat, dolore repellat sint rerum facilis ex eaque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione provident velit eius, qui nihil quis.</p>
             </div>
           <div class="container mt-3 text-center">
-              <div class="col"><i id="nyil" class="fa-solid fa-angles-down"></i></div>
+              <div class="col" data-aos="fade-down"><a href="#navigacio" onclick="scrolling()"><i id="nyil" class="fa-solid fa-angles-down"></i></a></div>
           </div>
             </div>
         </div>
     </div>
 
-    <nav data-aos="fade-in" class="navbar sticky-top navbar-expand-lg navbar-dark mt-3" style="padding:0px">
+    <nav data-aos="fade-in" class="navbar sticky-top navbar-expand-lg navbar-dark mt-3" style="padding:0px" id="navigacio">
         <div class="container-fluid p-0">
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav text-center">
@@ -48,7 +48,7 @@
           </div>
         </div>
       </nav>
-
+      <!---->
       <div class="container text-center">
         <div class="col">
           <p id="kategoriak">Miért mi?</p>
@@ -137,6 +137,7 @@
       <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
       <script src="assets/vendor/php-email-form/validate.js"></script>
       <script src="assets/js/main.js"></script>
+      <script src="main.js"></script>
 
 </body>
 </html>
