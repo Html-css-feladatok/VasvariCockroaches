@@ -91,22 +91,6 @@ body {
   color: #85bdbf;
 }
 
-#kategorialist {
-  border-bottom: 0px;
-}
-
-#kategorialist a {
-  margin-right: 15px;
-  border: 0px;
-  color: #85bdbf;
-  border-radius: 10px;
-}
-
-#kategorialist a:hover {
-  cursor: pointer;
-  background-color: #246464;
-}
-
 .checked {
   background: -webkit-linear-gradient(#ffd000, #ffb700, #ff8800, #ff7b00);
   -webkit-background-clip: text;
@@ -141,26 +125,4 @@ body {
     font-family: JMedium;
     color: white;
     text-align: justify;
-}
-
-.termekkep{
-    width: 270px;
-    height: 200px;
-}
-
-.termek{
-    color: #C2FCF7;
-}
-
-.termek,.ar,.leiras{
-    font-family: JMedium;
-}
-
-.ar{
-    font-size: 25px;
-    text-align: center;
-}
-
-.menu-item{
-    border-bottom: 1px solid #C2FCF7;
 }

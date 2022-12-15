@@ -1,0 +1,72 @@
+@font-face {
+    font-family: JBold;
+    src: url("font/JBold.ttf");
+}
+
+@font-face {
+    font-family: JEBold;
+    src: url("font/JExtraBold.ttf");
+}
+
+@font-face {
+    font-family: JMedium;
+    src: url("font/JMedium.ttf");
+}
+
+@font-face {
+    font-family: JLight;
+    src: url("font/JLight.ttf");
+}
+body {
+    background-color: #040f0f;
+    overflow-x: hidden;
+    color: white;
+}
+
+#kategoriak {
+    margin-top: 70px;
+    margin-bottom: 55px;
+    font-family: JEBold;
+    font-size: 120px;
+    background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#kategorialist {
+    border-bottom: 0px;
+  }
+  
+  #kategorialist a {
+    margin-right: 15px;
+    border: 0px;
+    color: #85bdbf;
+    border-radius: 10px;
+  }
+  
+  #kategorialist a:hover {
+    cursor: pointer;
+    background-color: #246464;
+  }
+
+.termekkep{
+    width: 270px;
+    height: 200px;
+}
+
+.termek{
+    color: #C2FCF7;
+}
+
+.termek,.ar,.leiras{
+    font-family: JMedium;
+}
+
+.ar{
+    font-size: 25px;
+    text-align: center;
+}
+
+.menu-item{
+    border-bottom: 1px solid #C2FCF7;
+}
