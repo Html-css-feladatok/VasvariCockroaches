@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Fonts */
+body {
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+#folap {
+  background-image: url("src/hatter.png");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+#szoveg {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+#kezdo_szovegek {
+  background-color: red;
+  min-height: 100vh;
+  min-width: 100%;
+  align-items: center;
+}
+.col-sm-6 {
+}
