@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: JBold;
+  src: url("/font/JBold.ttf");
+}
+@font-face {
+  font-family: JEBold;
+  src: url("/font/JBold.ttf");
+}
+@font-face {
+  font-family: JMedium;
+  src: url("/font/JMedium.ttf");
+}
+@font-face {
+  font-family: JLight;
+  src: url("/font/JLight.ttf");
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body {
+  background: #040f0f;
+  font-size: 50px;
+}
+
+h2 {
+  color: #c2fcf7;
+}
+
+a {
+  font-family: JBold;
+  text-decoration: none;
+  color: #85bdbf;
+  padding: 5px;
+  margin: 20px;
+}
+a:hover {
+  color: #c2fcf7;
+  transition: all 0.5s ease-in-out;
+}
+
+.header1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: hidden;
+}
+.header1.open {
+  visibility: visible;
+}
+.header1 .header1_item {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background: #122424;
+  padding-right: 1rem;
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+  font-family: JLight;
+  font-size: 22px;
+}
+.header1 .header1_item.open {
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.header2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: hidden;
+}
+.header2.open {
+  visibility: visible;
+}
+.header2 .header2_item {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background: #122424;
+  padding-right: 1rem;
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.box {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
+
+input {
+  width: 90%;
+  font-family: JLight;
+}
+
+.btn_inside_regisztracio {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+}
+.btn_inside_regisztracio:hover {
+  background: #2e3c3a;
+  transition: all 0.5s ease-in-out;
+}
+
+.toltes {
+  --angle: 0deg;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  background: #061313;
+  border: 5px solid;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  -o-border-image: linear-gradient(var(--angle), #040f0f, #122424, #85bdbf, #c2fcf7) 1;
+     border-image: linear-gradient(var(--angle), #040f0f, #122424, #85bdbf, #c2fcf7) 1;
+  -webkit-animation: topbordersize 1s infinite;
+          animation: topbordersize 1s infinite;
+}
+
+@-webkit-keyframes topbordersize {
+  from {
+    --angle:0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+@keyframes topbordersize {
+  from {
+    --angle:0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.bezarasbox {
+  display: inline;
+  position: relative;
+  left: 35px;
+  bottom: 10px;
+}/*# sourceMappingURL=main.css.map */
