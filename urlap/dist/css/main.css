@@ -203,4 +203,20 @@ input {
   transition: 1.5s;
   box-shadow: 0 0 10px #c2fcf7, 0 0 30px #c2fcf7, 0 0 60px #c2fcf7, 0 0 100px #c2fcf7;
   color: #04554e;
+}
+
+.ures {
+  visibility: hidden;
+}
+
+.ures2 {
+  visibility: hidden;
+}
+
+.lathato {
+  visibility: visible;
+}
+
+.lathato2 {
+  visibility: visible;
 }/*# sourceMappingURL=main.css.map */
