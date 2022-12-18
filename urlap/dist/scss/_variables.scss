@@ -1,0 +1,19 @@
+
+
+$hatter: #040f0f;
+$hatter2: #122424;
+$h1-betu: -webkit-linear-gradient(#85bdbf, #c2fcf7);
+$h2-betu-sotet: #85bdbf;
+$h2-betu: #c2fcf7;
+$btn-hatter :#2e3c3a;
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}

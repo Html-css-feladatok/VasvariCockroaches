@@ -1,0 +1,217 @@
+@import "variables";
+@font-face {
+  font-family: JBold;
+  src: url("../font/JBold.ttf");
+}
+
+@font-face {
+  font-family: JEBold;
+  src: url("../font/JEBold.ttf");
+}
+
+@font-face {
+  font-family: JMedium;
+  src: url("../font/JMedium.ttf");
+}
+
+@font-face {
+  font-family: JLight;
+  src: url("../font/JLight.ttf");
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body {
+  background: $hatter;
+  font-size: 50px;
+}
+
+h2 {
+  color: $h2-betu;
+}
+
+a {
+  font-family: JBold;
+  text-decoration: none;
+  color: $h2-betu-sotet;
+  padding: 5px;
+  margin: 20px;
+
+  &:hover {
+    color: $h2-betu;
+    @include transition-ease;
+  }
+}
+.header1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: hidden;
+
+  &.open {
+    visibility: visible;
+  }
+  .header1_item {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background: $hatter2;
+    padding-right: 1rem;
+    transform: translateY(-100%);
+    @include transition-ease;
+    visibility: hidden;
+    font-family: JLight;
+    font-size: 22px;
+
+    &.open {
+      transform: translateY(0);
+      visibility: visible;
+    }
+  }
+}
+
+.header2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: hidden;
+
+  &.open2 {
+    visibility: visible;
+  }
+  .header2_item {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background: $hatter2;
+    padding-right: 1rem;
+    transform: translateY(-100%);
+    @include transition-ease;
+    visibility: hidden;
+    font-family: JLight;
+    font-size: 22px;
+
+    &.open2 {
+      transform: translateY(0);
+      visibility: visible;
+    }
+  }
+}
+
+.box {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
+input {
+  width: 100% - 10%;
+  font-family: JLight;
+}
+
+.btn_inside_regisztracio {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+  &:hover {
+    background: $btn-hatter;
+
+    @include transition-ease;
+  }
+}
+.btn_inside_login {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+  &:hover {
+    background: $btn-hatter;
+
+    @include transition-ease;
+  }
+}
+.toltes {
+  --angle: 0deg;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  background: #061313;
+  border: 5px solid;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-image: linear-gradient(
+      var(--angle),
+      $hatter,
+      $hatter2,
+      $h2-betu-sotet,
+      $h2-betu
+    )
+    1;
+  animation: topbordersize 2s infinite;
+}
+
+@keyframes topbordersize {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.bezarasbox {
+  display: inline;
+  position: relative;
+  left: 35px;
+  bottom: 10px;
+}
+.btn-login {
+  // background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+    &:hover{
+      background: #c2fcf7;
+      transition: 1.5s;
+      box-shadow: 0 0 10px #c2fcf7,
+      0 0 30px #c2fcf7,
+      0 0 60px #c2fcf7,
+      0 0 100px #c2fcf7;
+      color: darken($color: #c2fcf7, $amount: 70%);
+    }
+}
+.btn-regisztracio {
+    &:hover{
+      background: #c2fcf7;
+      transition: 1.5s;
+      box-shadow: 0 0 10px #c2fcf7,
+      0 0 30px #c2fcf7,
+      0 0 60px #c2fcf7,
+      0 0 100px #c2fcf7;
+      color: darken($color: #c2fcf7, $amount: 70%);
+    }
+
+}
