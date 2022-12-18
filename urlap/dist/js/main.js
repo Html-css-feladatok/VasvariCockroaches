@@ -153,7 +153,7 @@ function storeinput2(){
             setTimeout(()=>{
                 window.location.replace("http://www.w3schools.com")
         
-            },2000)
+            },3000)
         }
         
     }
