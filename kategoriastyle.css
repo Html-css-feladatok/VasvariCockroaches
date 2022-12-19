@@ -17,6 +17,22 @@
     font-family: JLight;
     src: url("font/JLight.ttf");
 }
+
+@font-face {
+  font-family: pm;
+  src: url(font/pm.ttf);
+}
+
+@font-face {
+  font-family: pr;
+  src: url(font/pr.ttf);
+}
+
+@font-face {
+  font-family: pb;
+  src: url(font/pb.ttf);
+}
+
 body {
     background-color: #040f0f;
     color: white;
@@ -34,17 +50,48 @@ body::before {
 
 #kategoriak {
     margin-top: 70px;
-    margin-bottom: 35px;
-    font-family: JEBold;
-    font-size: 90px;
+    margin-bottom: 25px;
+    font-family: pb;
+    font-size: 70px;
     background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+#cim {
+  margin-top: 70px;
+  margin-bottom: 25px;
+  font-family: pb;
+  font-size: 90px;
+  background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.keszlet_van{
+  color: greenyellow;
+}
+
+.keszlet_nincs{
+  color:rgb(230, 73, 73)
+}
+
+.talcadetailkep{
+  width: 320px;
+  height: 320px;
+}
+
+.zuhanytalcak{
+  font-family: pm;
+}
+
+.zuhanytalcak li{
+  margin: 0px
+}
+
 #kategorialist {
     border-bottom: 0px;
-    font-family: JMedium;
+    font-family: pr;
   }
   
   #kategorialist a {
@@ -55,7 +102,7 @@ body::before {
   }
 
   #kategorialist h4{
-    font-size: 25px;
+    font-size: 20px;
   }
   
   #kategorialist a:hover {
@@ -68,12 +115,17 @@ body::before {
     height: 200px;
 }
 
+.termekkep1x1{
+  width: 240px;
+  height: 240px;
+}
+
 .termek{
     color: #C2FCF7;
 }
 
 .termek,.ar,.leiras{
-    font-family: JMedium;
+    font-family: pm;
 }
 
 .ar{
@@ -82,19 +134,31 @@ body::before {
     border-bottom: 1px solid #C2FCF7;
 }
 
+#szoveg{
+  font-size: 25px;
+  font-family: pm;
+  color: white;
+  text-align: justify;
+}
+
 
 
 @media screen and (max-width: 991px) {
     
     #kategoriak {
-        margin-top: 40px;
-        margin-bottom: 20px;
-        font-family: JEBold;
-        font-size: 80px;    
+        font-size: 50px;    
     }
+
+    #cim {
+      font-size: 70px;    
+  }
 
     #kategorialist h4{
         font-size: 17px;
+    }
+
+    #szoveg{
+      font-size: 17px;
     }
 }
 

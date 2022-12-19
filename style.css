@@ -17,6 +17,22 @@
   font-family: JLight;
   src: url("font/JLight.ttf");
 }
+
+@font-face {
+  font-family: pm;
+  src: url(font/pm.ttf);
+}
+
+@font-face {
+  font-family: pr;
+  src: url(font/pr.ttf);
+}
+
+@font-face {
+  font-family: pb;
+  src: url(font/pb.ttf);
+}
+
 body {
   background-color: #040f0f;
   overflow-x: hidden;
@@ -38,7 +54,7 @@ body {
 
 #textbal {
   margin-top: 120px;
-  font-family: JEBold;
+  font-family: pb;
   font-size: 110px;
   line-height: 0.9em;
   background: -webkit-linear-gradient(#85bdbf, #c2fcf7);
@@ -50,7 +66,7 @@ body {
 #textjobb {
   text-align: justify;
   margin-top: 20px;
-  font-family: JMedium;
+  font-family: pm;
   font-size: 25px;
   color: #c2fcf7;
 }
@@ -70,7 +86,7 @@ body {
 .navbar-nav a {
   font-size: 30px;
   margin-left: 50px;
-  font-family: JMedium;
+  font-family: pm;
 }
 
 #navlogo {
@@ -80,11 +96,12 @@ body {
 #kategoriak {
   margin-top: 70px;
   margin-bottom: 55px;
-  font-family: JEBold;
-  font-size: 120px;
+  font-family: pb;
+  font-size: 90px;
   background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
 }
 
 .navbar-nav a:hover {
@@ -98,7 +115,7 @@ body {
 }
 
 .nev {
-  font-family: JBold;
+  font-family: pb;
   color: white;
   border-bottom: white solid 1px;
   border-width: 10%;
@@ -111,7 +128,7 @@ body {
 }
 
 .ertekeles p {
-  font-family: JMedium;
+  font-family: pm;
   color: white;
   font-size: 25px;
 }
@@ -122,7 +139,7 @@ body {
 }
 #miertmiszoveg {
   font-size: 25px;
-  font-family: JMedium;
+  font-family: pr;
   color: white;
   text-align: justify;
 }
