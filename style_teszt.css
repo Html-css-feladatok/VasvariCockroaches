@@ -4,25 +4,247 @@
 }
 /* Fonts */
 body {
-  font-family: "Julius Sans One", sans-serif;
+  /*font-family: "Bai Jamjuree", sans-serif;*/
+  font-family: pr; 
   font-weight: bold;
   font-size: 20px;
+  background-color: #040f0f;
+}
+@font-face {
+  font-family: pm; /**medium */
+  src: url(font/pm.ttf);
+}
+
+@font-face {
+  font-family: pr; /**regular */
+  src: url(font/pr.ttf);
+}
+
+@font-face {
+  font-family: pb; /**bold */
+  src: url(font/pb.ttf);
 }
 #folap {
-  background-image: url("src/hatter.png");
+  background-image: url("src/hatter03.png"); 
   background-position: center;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 100vh; /**100 */
   width: 100%;
+  image-rendering: smooth;
 }
 #szoveg {
   font-family: "Bai Jamjuree", sans-serif;
 }
-#kezdo_szovegek {
-  background-color: red;
-  min-height: 100vh;
-  min-width: 100%;
+
+.flex-container
+{
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  justify-content: center;
   align-items: center;
 }
-.col-sm-6 {
+.left
+{
+  flex: 50%;
 }
+.right
+{
+  flex: 50%;
+}
+
+/**Telefonos kinézet -> Iphone 12/Pro*/
+@media (max-width: 390px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .left
+  {
+    margin-top: 200px;
+    margin-bottom: 80px;
+    font-size: 40px;
+    text-align: center;
+    background: -webkit-linear-gradient(#246464, #85bdbf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+  }
+  .right
+  {
+    text-align: center;
+    width: 80vw;
+    background: -webkit-linear-gradient(#246464, #85bdbf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-backdrop-filter: blur(1.5px);
+    border-radius: 10px;
+    /*color: #85bdbf;*/
+  }
+  #folap
+  {
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+  }
+  .navbar
+  {
+    background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+}
+
+
+/**Navbar -> nagy méret */
+@media(min-width:992px)
+{
+  .navbar a
+  {
+    text-decoration: none;
+  }
+  .home
+  {
+    /**top right bottom left */
+    margin: 0px 10px 0px 0px;
+    display: none;
+  }
+  .navbar
+  {
+    min-height: 12vh;
+    background: #040f0f;
+    font-size: 27px;
+    margin-bottom: 100px;
+  }
+  .navbar-nav .nav-item .nav-link
+  {
+    color: rgb(214, 208, 208);
+  }
+  .navbar-nav .nav-item .nav-link:hover
+  {
+    color: #85bdbf;
+    transition: 0.5s;
+  }
+  .navbar-nav .nav-item .nav-link:link
+  {
+    transition: 0.5s;
+  }
+  .navbar-brand
+  {
+    font-family: 'Pacifico', cursive;
+    color: rgb(214, 208, 208);
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar-brand:hover
+  {
+    color: #85bdbf;
+    transition: 0.5s;
+  }
+  .navbar-brand:link
+  {
+    transition: 0.5s;
+  }
+  #ertekelesek
+  {
+    background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  /**Navbar itemek hover effektek */
+
+  /**Jobb oldali iconok */
+  .log-in
+  {
+    margin: 0px 10px 0px 80px;
+    color: rgb(214, 208, 208);
+    font-size: 30px;
+  }
+  .log-in:hover
+  {
+    color: green !important;
+  }
+  .discord
+  {
+    color: rgb(214, 208, 208);
+    margin: 0px 10px 0px 10px;
+    font-size: 30px;
+  }
+  .discord:hover
+  {
+    color: grey !important;
+  }
+  .facebook
+  {
+    color: rgb(214, 208, 208); 
+    margin: 0px 10px 0px 10px;
+    font-size: 30px;
+  }
+  .facebook:hover
+  {
+    color: blue;
+    
+  }
+  /** */
+}
+/**Hamburger menu -> nagy méret 992px alatti*/
+@media(max-width:992px)
+{
+  .navbar .btn-secondary
+  {
+    width: 50px;
+    margin: 0 auto;
+    background-color: white;
+    position: absolute !important;
+  }
+  .log-in
+  {
+    border: 2px solid blue;
+    width: 50px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .log-in:hover
+  {
+    color: green;
+  }
+}
+
+
+
+
+/**
+ * @media screen and (max-width: 992px) {
+    #bal_szoveg
+    {
+      font-size: 60px;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    #bal_szoveg
+    {
+      font-size: 45px;
+    }
+}
+@media screen and (max-width:576px)
+{
+  #bal_szoveg
+  {
+    flex: 30%;
+    margin-top: 50%;
+  }
+  #jobb_szoveg
+  {
+    flex: 70%;
+    margin-bottom: 50%;
+    text-align: justify;
+  }
+    
+}
+ */
