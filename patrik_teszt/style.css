@@ -1,41 +1,39 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 /* Fonts */
 body {
   /*font-family: "Bai Jamjuree", sans-serif;*/
   font-family: pr; 
   font-weight: bold;
-  font-size: 20px;
   background-color: #040f0f;
 }
 @font-face {
   font-family: pm; /**medium */
-  src: url(font/pm.ttf);
+  src: url(../font/pm.ttf);
 }
 
 @font-face {
   font-family: pr; /**regular */
-  src: url(font/pr.ttf);
+  src: url(../font/pr.ttf);
 }
 
 @font-face {
   font-family: pb; /**bold */
-  src: url(font/pb.ttf);
+  src: url(../font/pb.ttf);
 }
+
 #folap {
-  background-image: url("src/hatter03.png"); 
+  background-image: url("../src/hatter03.png"); 
   background-position: center;
   background-size: cover;
   min-height: 100vh; /**100 */
   width: 100%;
   image-rendering: smooth;
 }
-#szoveg {
-  font-family: "Bai Jamjuree", sans-serif;
-}
-
 .flex-container
 {
   display: flex;
@@ -43,6 +41,10 @@ body {
   font-size: 20px;
   justify-content: center;
   align-items: center;
+}
+.flex-container2
+{
+  display: flex;
 }
 .left
 {
@@ -53,8 +55,8 @@ body {
   flex: 50%;
 }
 
-/**Telefonos kinézet -> Iphone 12/Pro*/
-@media (max-width: 390px) {
+/** .col -> 576px és ez alatt */
+@media (max-width: 576px) {
   .flex-container {
     flex-direction: column;
   }
@@ -67,19 +69,34 @@ body {
     background: -webkit-linear-gradient(#246464, #85bdbf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
     border-radius: 10px;
   }
   .right
   {
     text-align: center;
     width: 80vw;
-    background: -webkit-linear-gradient(#246464, #85bdbf);
+    background: -webkit-linear-gradient( #85bdbf,#85bdbf,#85bdbf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-backdrop-filter: blur(1.5px);
+    font-family: pm;
+    backdrop-filter: blur(3px);
+    font-size: 21px;
     border-radius: 10px;
     /*color: #85bdbf;*/
+
+  }
+  .down
+  {
+    margin-top: 50px !important;
+    font-size: 50px;
+    color:#246464 !important;
+    transition: 0.5s;
+  }
+  .down:hover
+  {
+    font-size: 65px;
+    cursor: pointer;
   }
   #folap
   {
@@ -88,18 +105,19 @@ body {
     min-height: 100vh;
     width: 100%;
   }
-  .navbar
-  {
-    background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
 
 }
 
-
-/**Navbar -> nagy méret */
-@media(min-width:992px)
+/*
+      XS ->  kisebb vagy 576xp
+      SM -> SMALL -> >= 576px
+      MD -> MIDDLE -> >= 768px
+      LG -> LARGE -> >= 992px
+      XL -> EXTRA LARGE -> 1200px
+      XXL -> EXTRA EXTRA LARGE -> 1400+ px
+*/
+/**Navbar ->*/
+@media screen and (min-width: 992px)
 {
   .navbar a
   {
@@ -144,10 +162,6 @@ body {
     color: #85bdbf;
     transition: 0.5s;
   }
-  .navbar-brand:link
-  {
-    transition: 0.5s;
-  }
   #ertekelesek
   {
     background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
@@ -156,12 +170,11 @@ body {
     text-transform: uppercase;
     font-weight: bold;
   }
-  /**Navbar itemek hover effektek */
 
   /**Jobb oldali iconok */
   .log-in
   {
-    margin: 0px 10px 0px 80px;
+    margin: 0px 10px 0px 10px;
     color: rgb(214, 208, 208);
     font-size: 30px;
   }
@@ -195,24 +208,7 @@ body {
 /**Hamburger menu -> nagy méret 992px alatti*/
 @media(max-width:992px)
 {
-  .navbar .btn-secondary
-  {
-    width: 50px;
-    margin: 0 auto;
-    background-color: white;
-    position: absolute !important;
-  }
-  .log-in
-  {
-    border: 2px solid blue;
-    width: 50px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .log-in:hover
-  {
-    color: green;
-  }
+
 }
 
 

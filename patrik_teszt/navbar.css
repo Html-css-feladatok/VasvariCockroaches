@@ -1,0 +1,111 @@
+/* Navbar különböző méretei */
+/* .col -> sm méret*/
+@media screen and (max-width:576px)
+{
+    .navbar
+    {
+      background-color: #051010;
+      padding-bottom: -50px;
+    }
+    .navbar-brand
+    {
+        background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .navbar .navbar-nav .nav-item a
+    {
+        background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      width: 25vw;
+      font-size: 18px;
+    }
+    .navbar .navbar-nav .nav-item a:hover
+    {
+        background: -webkit-linear-gradient(#246464, #85bdbf);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    /* Log-in */
+    .navbar .navbar-nav .log-in
+    {
+        color: white;
+        font-size: 20px;
+    }
+    .navbar .navbar-nav .log-in:hover
+    {
+        color: green;
+        font-size: 20px;
+    }
+    /* Discord */
+    .navbar .navbar-nav .discord
+    {
+        color: white;
+        font-size: 20px;
+    }
+    .navbar .navbar-nav .discord:hover
+    {
+        color: gray;
+        font-size: 20px;
+    }
+    /* Facebook */
+    .navbar .navbar-nav .facebook
+    {
+        color: white;
+        font-size: 20px;
+    }
+    .navbar .navbar-nav .facebook:hover
+    {
+        color: blue;
+        font-size: 20px;
+    }
+
+    /* Középre igazítás */
+    .navbar .flex-container2 .navbar-nav
+    {
+        flex-direction: row;
+        margin: 0 auto;
+        padding-bottom: 5px;
+    }
+    .navbar .flex-container2 .navbar-nav .log-in
+    {
+        margin-right: 30px;
+    }
+    .navbar .flex-container2 .navbar-nav .discord
+    {
+        margin-right: 30px;
+    }
+    .home
+    {
+        margin-right: 5px;
+    }
+    .star
+    {
+        margin-right: 5px;
+    }
+    .check
+    {
+        margin-right: 5px;
+    }
+    .envelope
+    {
+        margin-right: 5px;
+    }
+    .box
+    {
+        margin-right: 5px;
+    }
+}
+/* Iphone 12/12 Pro */
+@media screen and (max-width: 390px)
+{
+    .navbar .navbar-nav .nav-item a
+    {
+        background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      width: 35%;
+    }
+}
+

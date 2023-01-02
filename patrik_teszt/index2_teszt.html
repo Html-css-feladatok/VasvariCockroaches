@@ -56,17 +56,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="icons/css/all.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css?v=7857324">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-    <link rel="stylesheet" href="style_teszt.css" />
-    <title>VasvariCockroaches Webáruház</title>
+    <!--Iconok-->
+    <link rel="stylesheet" href="../icons/css/all.min.css" />
+    <!--Sima stíluslap-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Navbar stíluslap-->
+    <link rel="stylesheet" href="navbar.css" />
+    <!--Content stíluslap-->
+    <link rel="stylesheet" href="content.css" />
+    <title>VasváriCockroaches Webáruház</title>
   </head>
   <!--BODY-->
   <body>
     <!--Grid system-->
-    <!--
+    <!--‎
       XS ->  kisebb vagy 576xp
       SM -> SMALL -> >= 576px
       MD -> MIDDLE -> >= 768px
@@ -95,7 +101,8 @@
       </div>
     </section>
     -->
-    <section id="folap">
+    <div class="hatter"></div>
+    <section id="folap" class="szoveg">
       <div class="flex-container">
         <div class="left">
           Mit<br>kínálunk?
@@ -103,37 +110,44 @@
         <div class="right">
           Oldalunkon fürdőszoba és WC termékeket vásárolhat.
         </div>
+        <div class="down">
+          <a onclick="scrolling()" class="down" href="#navbar"><i class="fa-solid fa-angle-down"></i></a>
+        </div>
       </div>
     </section>
 
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#folap">VasváriCockroaches</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"><i class="fa-sharp fa-solid fa-house home"></i>Kezdőlap</a>
+              <a class="nav-link active" aria-current="page" href="#div_01"><i class="fa-sharp fa-solid fa-house home"></i>Kezdőlap</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#ertekelesek">Értékelések</a>
+              <a class="nav-link" href="#div_01"><i class="fa-solid fa-star star"></i>Értékelések</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Miért mi?</a>
+              <a class="nav-link" href="#miertmi"><i class="fa-solid fa-check check"></i>Miért mi?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Kapcsolat</a>
+              <a class="nav-link" href="#"><i class="fa-solid fa-box box"></i>Termékeink</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-envelope envelope"></i>Kapcsolat</a>
             </li>
           </ul>
+          <div class="flex-container2">          
           <ul class="navbar-nav ms-auto">
-            <li><a href="urlap/dist/urlap.html" class="log-in"><i class="fa-solid fa-right-to-bracket"></i></a></li>
-            <li><a class="discord"><i class="fa-brands fa-discord"></i></a></li>
-            <li><a href="https://www.facebook.com/" class="facebook"><i class="fa-brands fa-facebook"></i></a></li>
-
+            <li class="log-in"><a href="urlap/dist/urlap.html" class="log-in"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+            <li class="discord"><a class="discord"><i class="fa-brands fa-discord"></i></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/" class="facebook"><i class="fa-brands fa-facebook"></i></a></li>
           </ul>
+        </div>
         </div>
       </div>
     </nav>
@@ -159,96 +173,99 @@
       </div>
     </section>
     <!--Section #2 vége-->
+    <div id="div_01"></div>
     <div class="container text-center">
-      <div class="row">      
+      <div class="row">
         <div class="col-12 text-center">
-        <h1 class="display-3" id="ertekelesek">Értékelések</h1>
+        <h1 class="display-4" id="ertekelesek">Értékelések</h1>
       </div>
       <div class="container text-center">
         <div class="row">
-            <div class="col ertekeles">
+            <div class="col-4 ertekeles">
                 
-              <h1 class="nev">Név</h1>
-              <p>-Remek weboldal <br> ‎ </p>
+              <h1 class="nev">Nagy János</h1>
+              <p class="ertekeles_szoveg">Széles választék!</p>
+              <div class="csillagok">                
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
-                
+              </div>
+
             </div>
-            <div class="col ertekeles">
+            <div class="col-4 ertekeles">
    
-              <h1 class="nev">Név</h1>
-              <p>-Kevés volt a mosógép <br> ‎</p>
+              <h1 class="nev">Takács Boglárka</h1>
+              <p class="ertekeles_szoveg">Nincs házhozszállítási opció!</p>
+              <div class="csillagok">                
                 <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star "></span>
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
                 
             </div>
-            <div class="col ertekeles">
+            <div class="col-4 ertekeles">
 
-              <h1 class="nev">Név</h1>
-              <p>-Lehetett volna több az áru<br> ‎</p>
+              <h1 class="nev">Halász Fanni</h1>
+              <p class="ertekeles_szoveg">Lehetett volna több az áru!</p>
+              <div class="csillagok">                
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
-                
-            </div>
-            <div class="col ertekeles">
-
-              <h1 class="nev">Kis Pisti</h1>
-              <p>-Kiváló, gyors kiszállítás!<br>‎</p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                
+              </div>
             </div>
         </div>
-
-        </div>
+      </div>
+    </div>
     </div>
     <!--Vélemény end-->
-    </div>
-    <div class="container">
+    <div class="container" id="miertmi">
       <div class="col-12 text-center">
-          <p id="szoveg">Cégünk széles kínálatában a különböző méretek, formák és rögzítési lehetőségek közül mindenki megtalálhatja a számára legideálisabb
+        <h1 class="cim display-4">Miért mi?</h1>
+          <p class="szoveg">Cégünk széles kínálatában a különböző méretek, formák és rögzítési lehetőségek közül mindenki megtalálhatja a számára legideálisabb
             megoldást új fürdőszobája felszerelésére. Termékeink egyszerűek, de mégis elegánsak, ezáltal modern érzést keltetnek fürdőszobájának.</p>
       </div>
     </div>
     <div class="container">
       <div class="col-12 text-center">
-        <h1 id="cim">Termékeink</h1>
-          <p id="szoveg">Cégünk széles kínálatában a különböző méretek, formák és rögzítési lehetőségek közül mindenki megtalálhatja a számára legideálisabb
+        <h1 class="cim display-4">Termékeink</h1>
+          <p class="szoveg">Termékeink széles választéka várja.</p>
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="col-12 text-center">
+        <h1 class="cim display-4">Termékeink</h1>
+          <p class="szoveg">Cégünk széles kínálatában a különböző méretek, formák és rögzítési lehetőségek közül mindenki megtalálhatja a számára legideálisabb
             megoldást új fürdőszobája felszerelésére. Termékeink egyszerűek, de mégis elegánsak, ezáltal modern érzést keltetnek fürdőszobájának.</p>
       </div>
     </div>
     <div class="container">
       <div class="col-12 text-center">
-        <h1 id="cim">Termékeink</h1>
-          <p id="szoveg">Cégünk széles kínálatában a különböző méretek, formák és rögzítési lehetőségek közül mindenki megtalálhatja a számára legideálisabb
+        <h1 class="cim display-4">Termékeink</h1>
+          <p class="szoveg">Cégünk széles kínálatában a különböző méretek, formák és rögzítési lehetőségek közül mindenki megtalálhatja a számára legideálisabb
             megoldást új fürdőszobája felszerelésére. Termékeink egyszerűek, de mégis elegánsak, ezáltal modern érzést keltetnek fürdőszobájának.</p>
       </div>
     </div>
     <div class="container">
       <div class="col-12 text-center">
-        <h1 id="cim">Termékeink</h1>
-          <p id="szoveg">Cégünk széles kínálatában a különböző méretek, formák és rögzítési lehetőségek közül mindenki megtalálhatja a számára legideálisabb
+        <h1 class="cim display-4">Termékeink</h1>
+          <p class="szoveg">Cégünk széles kínálatában a különböző méretek, formák és rögzítési lehetőségek közül mindenki megtalálhatja a számára legideálisabb
             megoldást új fürdőszobája felszerelésére. Termékeink egyszerűek, de mégis elegánsak, ezáltal modern érzést keltetnek fürdőszobájának.</p>
       </div>
     </div>
     <div class="container">
       <div class="col-12 text-center">
-        <h1 id="cim">Termékeink</h1>
-          <p id="szoveg">Cégünk széles kínálatában a különböző méretek, formák és rögzítési lehetőségek közül mindenki megtalálhatja a számára legideálisabb
+        <h1 class="cim display-4">Termékeink</h1>
+          <p class="szoveg">Cégünk széles kínálatában a különböző méretek, formák és rögzítési lehetőségek közül mindenki megtalálhatja a számára legideálisabb
             megoldást új fürdőszobája felszerelésére. Termékeink egyszerűek, de mégis elegánsak, ezáltal modern érzést keltetnek fürdőszobájának.</p>
       </div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
