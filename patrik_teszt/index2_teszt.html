@@ -101,7 +101,6 @@
       </div>
     </section>
     -->
-    <div class="hatter"></div>
     <section id="folap" class="szoveg">
       <div class="flex-container">
         <div class="left">
@@ -118,12 +117,11 @@
 
     <!--NAVBAR-->
     <!--NAVBAR SAVE -> jó navbar-->
-    <!--
     <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#folap">VasváriCockroaches</a>
+        <a class="navbar-brand" href="#folap"><img src="../src/logo.png" alt="" id="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -131,70 +129,26 @@
               <a class="nav-link active" aria-current="page" href="#div_01"><i class="fa-sharp fa-solid fa-house home"></i>Kezdőlap</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#div_01"><i class="fa-solid fa-star star"></i>Értékelések</a>
+              <a class="nav-link" href="#ertekelesek"><i class="fa-solid fa-star star"></i>Értékelések</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#miertmi"><i class="fa-solid fa-check check"></i>Miért mi?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa-solid fa-box box"></i>Termékeink</a>
+              <a class="nav-link" href="../kategoriak.html"><i class="fa-solid fa-box box"></i>Termékeink</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"><i class="fa-solid fa-envelope envelope"></i>Kapcsolat</a>
             </li>
           </ul>
-          <div class="flex-container2">          
-          <ul class="navbar-nav ms-auto">
-            <li class="log-in"><a href="urlap/dist/urlap.html" class="log-in"><i class="fa-solid fa-right-to-bracket"></i></a></li>
-            <li class="discord"><a class="discord"><i class="fa-brands fa-discord"></i></a></li>
-            <li class="facebook"><a href="https://www.facebook.com/" class="facebook"><i class="fa-brands fa-facebook"></i></a></li>
-          </ul>
-        </div>
+            <ul class="navbar-nav ms-auto d-lg-inline-flex icon-elrendezes">
+              <li class="log-in"><a href="urlap/dist/urlap.html" class="log-in"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+              <li class="discord"><a class="discord"><i class="fa-brands fa-discord"></i></a></li>
+              <li class="facebook"><a href="https://www.facebook.com/" class="facebook"><i class="fa-brands fa-facebook"></i></a></li>
+            </ul>      
         </div>
       </div>
     </nav>
-    -->
-    <nav class="navbar navbar-expand-lg sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Logo helye</a>
-        <!--Navbar toggler button-->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!--Navbar toggler button-->
-     
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto ">
-            <li class="nav-item">
-              <a class="nav-link mx-2 active" aria-current="page" href="#">Kezdőlap</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="#ertekelesek">Értékelések</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="#miertmi">Miért mi?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="#">Termékek</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="#">Kapcsolat</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
-            <li class="nav-item mx-2">
-              <a class="nav-link text-dark h5" href="" target="blank"><i class="fa-solid fa-right-to-bracket"></i></a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link text-dark h5" href="" target="blank"><i class="fa-brands fa-discord"></i></a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link text-dark h5" href="" target="blank"><i class="fa-brands fa-facebook"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav> 
     <!--NAVBAR VÉGE-->
 
 
@@ -217,7 +171,6 @@
       </div>
     </section>
     <!--Section #2 vége-->
-    <div id="div_01"></div>
     <div class="container text-center">
       <div class="row">
         <div class="col-12 text-center">
@@ -268,11 +221,13 @@
     </div>
     </div>
     <!--Vélemény end-->
-    <div class="container" id="miertmi">
+    <!--Miért mi?-->
+    <div class="container">
       <div class="col-12 text-center">
-        <h1 class="cim display-4">Miért mi?</h1>
+        <h1 class="cim display-4" id="miertmi">Miért mi?</h1>
           <p class="szoveg">Cégünk széles kínálatában a különböző méretek, formák és rögzítési lehetőségek közül mindenki megtalálhatja a számára legideálisabb
             megoldást új fürdőszobája felszerelésére. Termékeink egyszerűek, de mégis elegánsak, ezáltal modern érzést keltetnek fürdőszobájának.</p>
+          <p>Cégünk 2007. óta dolgozik azért, hogy a legmegfelelőbb és legjobb termékeket nyújtsa a vevők számára.</p>
       </div>
     </div>
     <div class="container">

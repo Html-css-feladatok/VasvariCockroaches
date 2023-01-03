@@ -9,8 +9,20 @@
       text-transform: uppercase;
       font-family: pm;
       margin-bottom: 3vh;
-      margin-top: 7vh;
-      z-index: 9999;
+    }
+    #ertekelesek::before
+    {
+        display: block;
+        height: 80px;   /* equal to the header height */
+        visibility: hidden;
+        content: "";
+    }
+    #miertmi::before
+    {
+        display: block;
+        height: 80px;   /* equal to the header height */
+        visibility: hidden;
+        content: "";
     }
     .nev
     {
@@ -60,5 +72,31 @@
         text-transform: uppercase;
         font-family: pm;
         margin-top: 3vh;
+    }
+    .left
+    {
+      margin-top: 200px;
+      margin-bottom: 80px;
+      font-size: 65px;
+      font-family: pb;
+      text-align: center;
+      background: -webkit-linear-gradient(#246464,#246464);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      backdrop-filter: blur(3px);
+      border-radius: 10px;
+    }
+    .right
+    {
+      text-align: center;
+      width: 80vw;
+      background: -webkit-linear-gradient( #85bdbf,#85bdbf,#85bdbf);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: pm;
+      backdrop-filter: blur(3px);
+      font-size: 21px;
+      border-radius: 10px;
+      /*color: #85bdbf;*/
     }
 }
