@@ -16,42 +16,11 @@
   font-family: pr;
   src: url("../font/pr.ttf");
 }
-@media screen and (max-width: 360px) {
-  div.home {
-    font-size: 30px;
-  }
-  div.row h2 {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 324px) {
-  div.home {
-    font-size: 30px;
-  }
-  div.row h2 {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 302px) {
-  div.home {
-    font-size: 30px;
-  }
-  div.row h2 {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 285px) {
-  div.home {
-    font-size: 30px;
-  }
-  div.row h2 {
-    font-size: 14px;
-  }
-}
 section {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vh;
   height: 100vh;
 }
 
@@ -64,11 +33,11 @@ body {
 
 h2 {
   color: #c2fcf7;
-  font-family: pm;
+  font-family: pb;
 }
 
 a {
-  font-family: pm;
+  font-family: pb;
   text-decoration: none;
   color: #85bdbf;
   padding: 5px;
@@ -98,7 +67,6 @@ a:hover {
   height: 100vh;
   overflow: hidden;
   background: #122424;
-  padding-left: 1rem;
   padding-right: 1rem;
   transform: translateY(-100%);
   transition: all 0.5s ease-in-out;
@@ -131,12 +99,11 @@ a:hover {
   overflow: hidden;
   background: #122424;
   padding-right: 1rem;
-  padding-left: 1rem;
   transform: translateY(-100%);
   transition: all 0.5s ease-in-out;
   visibility: hidden;
   font-family: pr;
-  font-size: 22px !important;
+  font-size: 22px;
 }
 .header2 .header2_item.open2 {
   transform: translateY(0);
