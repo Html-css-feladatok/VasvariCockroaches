@@ -6,9 +6,23 @@
     {
       background-color: #051010;
     }
+    .navbar-toggler
+    {
+        border: 2px solid gray;
+    }
+    .navbar-toggler-icon
+    {
+       color: gray;
+       background-image: none;
+       align-items: center;
+       justify-content: center;
+       display: flex;
+       font-size: 25px;
+       transition: 0.5s;
+    }
     .navbar-brand
     {
-        background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
+      background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -17,63 +31,51 @@
         background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      width: 25vw;
+      width: 27vw;
       font-size: 18px;
+      transition: 0.5s;
     }
     .navbar .navbar-nav .nav-item a:hover
     {
-        background: -webkit-linear-gradient(#246464, #85bdbf);
+        background: -webkit-linear-gradient(#246464, #246464 ,#c2fcf7);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-size: 19.5px;
     }
     /* Log-in */
     .navbar .navbar-nav .log-in
     {
         color: white;
-        font-size: 20px;
+        font-size: 23px;
+        margin-right: 30px;
     }
     .navbar .navbar-nav .log-in:hover
     {
         color: green;
-        font-size: 20px;
+        font-size: 23px;
     }
     /* Discord */
     .navbar .navbar-nav .discord
     {
         color: white;
-        font-size: 20px;
+        font-size: 23px;
+        margin-right: 30px;
     }
     .navbar .navbar-nav .discord:hover
     {
         color: gray;
-        font-size: 20px;
+        font-size: 23px;
     }
     /* Facebook */
     .navbar .navbar-nav .facebook
     {
         color: white;
-        font-size: 20px;
+        font-size: 23px;
     }
     .navbar .navbar-nav .facebook:hover
     {
         color: blue;
-        font-size: 20px;
-    }
-
-    /* Középre igazítás */
-    .navbar .flex-container2 .navbar-nav
-    {
-        flex-direction: row;
-        margin: 0 auto;
-        padding-bottom: 5px;
-    }
-    .navbar .flex-container2 .navbar-nav .log-in
-    {
-        margin-right: 30px;
-    }
-    .navbar .flex-container2 .navbar-nav .discord
-    {
-        margin-right: 30px;
+        font-size: 23px;
     }
     .home
     {
@@ -95,6 +97,16 @@
     {
         margin-right: 5px;
     }
+    .icon-elrendezes
+    {
+        flex-direction: row;
+        justify-content: center;
+    }
+    #logo
+    {
+        width: 50px;
+        height:50px;
+    }
 }
 /* Iphone 12/12 Pro */
 @media screen and (max-width: 390px)
@@ -108,6 +120,7 @@
     }
 }
 
+/* Large resolution */
 @media screen and (min-width: 1400px)
 {
     .navbar
