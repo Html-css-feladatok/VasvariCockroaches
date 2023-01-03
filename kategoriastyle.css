@@ -33,21 +33,17 @@
   src: url(font/pb.ttf);
 }
 
+html{
+  width: 100vw;
+}
+
 body {
     background-color: #040f0f;
     color: white;
     font-family: pr;
+    width: 100vw;
+    overflow-x: hidden;
 }
-
-body::before {
-    content: "XS";
-    color: red;
-    font-size: 2rem;
-    font-weight: bold;
-    position: fixed;
-    top: 0;
-    right: 0;
-  }
 
 #kategoriak {
     margin-top: 40px;
@@ -96,7 +92,7 @@ body::before {
   }
   
   #kategorialist a {
-    margin-right: 15px;
+    margin: 5px;
     border: 0px;
     color: #85bdbf;
     border-radius: 10px;
@@ -104,6 +100,7 @@ body::before {
 
   #kategorialist h4{
     font-size: 20px;
+    padding-top: 5px;
   }
   
   #kategorialist a:hover {
@@ -185,19 +182,20 @@ body::before {
 @media screen and (max-width: 991px) {
     
     #kategoriak {
-        font-size: 50px;    
+        font-size: 40px;    
     }
 
     #cim {
-      font-size: 70px;    
+      font-size: 60px;    
   }
 
     #kategorialist h4{
-        font-size: 17px;
+        font-size: 12px;
     }
 
     #szoveg{
-      font-size: 17px;
+      font-size: 14px;
+      padding:20px;
     }
 }
 
