@@ -5,7 +5,6 @@
     .navbar
     {
       background-color: #051010;
-      padding-bottom: -50px;
     }
     .navbar-brand
     {
@@ -109,3 +108,27 @@
     }
 }
 
+@media screen and (min-width: 1400px)
+{
+    .navbar
+    {
+        background-color: red;
+        padding: 0px;
+        margin: 0px;
+        font-size: 20px;
+        min-height: 50px;
+    }
+    #ertekelesek::before
+    {
+        display: block;
+        height: 90px;   /* equal to the header height */
+        visibility: hidden;
+        content: "";
+    }
+    #brand-img
+    {
+        margin-left: 25px;
+        height: 100px;
+        width: 100px;
+    }
+}
