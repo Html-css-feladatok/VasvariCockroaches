@@ -13,12 +13,15 @@
         width: 85%;
         margin: 0 auto;
     }
-    .kapcsolat
+    .elhelyezkedes
     {
         background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: pb;
+        font-size: 20px;
+        margin-bottom: 25px;
+        margin-top: 15px;
     }
     #ertekelesek::before
     {
@@ -26,6 +29,10 @@
         height: 80px; 
         visibility: hidden;
         content: "";
+    }
+    #ertekelesek
+    {
+        margin-bottom: 50px;
     }
     #miertmi::before
     {
@@ -40,6 +47,57 @@
         height: 80px; 
         visibility: hidden;
         content: "";
+    }
+    #irj_nekunk::before
+    {
+        display: block;
+        height: 70px; 
+        visibility: hidden;
+        content: "";
+    }
+    #irj_nekunk
+    {
+        margin-bottom: 2rem;
+    }
+    /**Küldés gomb */
+    .kuldes_gomb
+    {
+        background-color: #246464;
+        border: none;
+        transition: 0.5s;
+        font-family: pm;
+        width: 20vw;
+        font-size: 18px;
+    }
+    .kuldes_gomb:hover
+    {
+        background-color: #85bdbf;
+        color: black;
+    }
+    .kerdojel_gomb
+    {
+        color: white;
+        font-size: 20px;
+    }
+    .kerdojel_gomb:hover
+    {
+        cursor: help;
+    }
+
+    .gomb
+    {
+        background-color: none;
+    }
+    .custom-tooltip
+    {
+        --bs-tooltip-bg: #246464;
+        --bs-tooltip-color: white;
+        --bs-tooltip-max-width: 250px;
+        --bs-tooltip-opacity: 1;
+        --bs-tooltip-arrow-width: 18px;
+        --bs-tooltip-arrow-height: 8px;
+        --bs-tooltip-font-size: 18px;
+        font-weight: 400;
     }
     .nev
     {

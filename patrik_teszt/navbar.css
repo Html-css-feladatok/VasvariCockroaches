@@ -28,19 +28,21 @@
     }
     .navbar .navbar-nav .nav-item a
     {
-        background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
+    background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       width: 27vw;
       font-size: 18px;
       transition: 0.5s;
+      
     }
     .navbar .navbar-nav .nav-item a:hover
     {
         background: -webkit-linear-gradient(#246464, #246464 ,#c2fcf7);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 19.5px;
+        font-size: 18.5px;
+    
     }
     /* Log-in */
     .navbar .navbar-nav .log-in

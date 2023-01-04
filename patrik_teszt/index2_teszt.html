@@ -52,7 +52,7 @@
       href="assets/vendor/glightbox/css/glightbox.min.css"
       rel="stylesheet"
     />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -132,7 +132,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#div_01"><i class="fa-sharp fa-solid fa-house home"></i>Kezdőlap</a>
+              <a class="nav-link active" aria-current="page" href="#folap"><i class="fa-sharp fa-solid fa-house home"></i>Kezdőlap</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#ertekelesek"><i class="fa-solid fa-star star"></i>Értékelések</a>
@@ -144,7 +144,7 @@
               <a class="nav-link" href="../kategoriak.html"><i class="fa-solid fa-box box"></i>Termékeink</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa-solid fa-envelope envelope"></i>Kapcsolat</a>
+              <a class="nav-link" href="#kapcsolat"><i class="fa-solid fa-envelope envelope"></i>Kapcsolat</a>
             </li>
           </ul>
             <ul class="navbar-nav ms-auto d-lg-inline-flex icon-elrendezes">
@@ -239,49 +239,51 @@
     <div class="container">
       <div class="col-12 text-center">
         <h1 class="cim display-4" id="kapcsolat">Kapcsolat</h1>
-        <p class="kapcsolat">Elhelyezkedésünk</p>
+        <p class="elhelyezkedes">Elhelyezkedésünk</p>
         <div class="mb-3 mt-3">
-          <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+          <iframe style="border:0; width: 100%; height: 350px;" src="https://maps.google.com/maps?q=Szegedi%20SZC%20Vasv%C3%A1ri%20P%C3%A1l%20Gazdas%C3%A1gi%20%C3%A9s%20Informatikai%20Technikum&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="col-12 text-center">
+        <h1 class="cim display-4" id="irj_nekunk">Írj nekünk!</h1>
         <form>
           <!-- Vezetéknév input -->
           <div class="form-outline mb-2 text-center">
-            <label class="form-label szoveg" for="form4Example1">Vezetéknév</label>
-            <input type="text" id="form4Example1" class="form-control form-bevitel" placeholder="Vezetéknév" />
+            <label class="form-label szoveg">Vezetéknév</label>
+            <input type="text" class="form-control form-bevitel" placeholder="Vezetéknév" />
           </div>
           <!-- Keresztnév input -->
           <div class="form-outline mb-2 text-center">
-            <label class="form-label szoveg" for="form4Example1">Keresztnév</label>
-            <input type="text" id="form4Example1" class="form-control form-bevitel" placeholder="Vezetéknév" />
+            <label class="form-label szoveg">Keresztnév</label>
+            <input type="text" class="form-control form-bevitel" placeholder="Vezetéknév" />
           </div>
         
           <!-- Email input -->
           <div class="form-outline mb-2 text-center">
-            <label class="form-label szoveg" for="form4Example2">Email cím</label>
-            <input type="email" id="form4Example2" class="form-control form-bevitel" placeholder="Email cím" />
+            <label class="form-label szoveg">Email cím</label>
+            <input type="email" class="form-control form-bevitel" placeholder="Email cím" />
           </div>
         
           <!-- Message input -->
           <div class="form-outline mb-2 text-center">
-            <label class="form-label szoveg" for="form4Example3">Üzenet</label>
-            <textarea class="form-control form-bevitel" id="form4Example3" rows="4"></textarea>
+            <label class="form-label szoveg">Üzenet</label>
+            <textarea class="form-control form-bevitel" rows="4" placeholder="Tetszett az oldal mert..."></textarea>
           </div>
         
           <!-- Checkbox -->
-          <div class="form-check d-flex justify-content-center mb-4">
-            <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
-            <label class="form-check-label szoveg" for="form4Example4">
-              Feliratkozok a hírlevélre
+          <div class="form-check form-switch d-flex justify-content-center align-items-center mb-4">
+            <input class="form-check-input me-2 mb-1" type="checkbox" value="asd" checked />
+            <label class="form-check-label szoveg">
+              Feliratkozok a hírlevélre<button type="button" class="btn kerdojel_gomb mb-1" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Hírlevelünkre feliratkozva kedvezményekre tehetsz szert!"><i class="fa-solid fa-question"></i>
+              </button>
             </label>
           </div>
         
           <!-- Submit button -->
           <div class="text-center mb-1">
-            <button type="submit" class="btn btn-primary btn-block mb-4 text-center">Küldés</button>
+            <button type="submit" class="btn btn-primary mb-4 text-center kuldes_gomb">Küldés</button>
           </div>
         </form>
       </div>
