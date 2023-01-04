@@ -58,15 +58,16 @@ body {
   }
   .down
   {
-    margin-top: 50px !important;
+    margin-top: 50px;
     font-size: 50px;
-    color:#246464 !important;
+    color:#c2fcf7;
     transition: 0.5s;
   }
   .down:hover
   {
     font-size: 65px;
     cursor: pointer;
+    color: #c2fcf7;
   }
   #folap
   {
