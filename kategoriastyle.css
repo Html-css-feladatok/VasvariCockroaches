@@ -139,6 +139,15 @@ body {
   text-align: justify;
 }
 
+.termek{
+  text-decoration: none;
+  color:#C2FCF7
+}
+
+.termek:hover{
+  color: #85bdbf;
+}
+
 .szak_nev{
   font-family: pm;
 }
