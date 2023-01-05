@@ -7,7 +7,7 @@
 /* Fonts */
 body {
   /*font-family: "Bai Jamjuree", sans-serif;*/
-  font-family: pr; 
+  font-family: pr;
   font-weight: bold;
   background-color: #040f0f;
 }
@@ -27,27 +27,24 @@ body {
 }
 
 #folap {
-  background-image: url("../src/hatter03.png"); 
+  background-image: url("../src/hatter03.png");
   background-position: center;
   background-size: cover;
   min-height: 100vh; /**100 */
   width: 100%;
   image-rendering: smooth;
 }
-.flex-container
-{
+.flex-container {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   font-size: 20px;
   justify-content: center;
   align-items: center;
 }
-.left
-{
+.left {
   flex: 50%;
 }
-.right
-{
+.right {
   flex: 50%;
 }
 
@@ -56,27 +53,23 @@ body {
   .flex-container {
     flex-direction: column;
   }
-  .down
-  {
+  .down {
     margin-top: 50px;
     font-size: 50px;
-    color:#c2fcf7;
+    color: #c2fcf7;
     transition: 0.5s;
   }
-  .down:hover
-  {
+  .down:hover {
     font-size: 65px;
     cursor: pointer;
     color: #c2fcf7;
   }
-  #folap
-  {
+  #folap {
     background-position: center;
     background-size: cover;
     min-height: 100vh;
     width: 100%;
   }
-
 }
 
 /*
@@ -88,53 +81,43 @@ body {
       XXL -> EXTRA EXTRA LARGE -> 1400+ px
 */
 /**Navbar ->*/
-@media screen and (min-width: 992px)
-{
-  .navbar a
-  {
+@media screen and (min-width: 992px) {
+  .navbar a {
     text-decoration: none;
   }
-  .home
-  {
+  .home {
     /**top right bottom left */
     margin: 0px 10px 0px 0px;
     display: none;
   }
-  .navbar
-  {
+  .navbar {
     min-height: 12vh;
     background: #040f0f;
     font-size: 27px;
     margin-bottom: 100px;
   }
-  .navbar-nav .nav-item .nav-link
-  {
+  .navbar-nav .nav-item .nav-link {
     color: rgb(214, 208, 208);
   }
-  .navbar-nav .nav-item .nav-link:hover
-  {
+  .navbar-nav .nav-item .nav-link:hover {
     color: #85bdbf;
     transition: 0.5s;
   }
-  .navbar-nav .nav-item .nav-link:link
-  {
+  .navbar-nav .nav-item .nav-link:link {
     transition: 0.5s;
   }
-  .navbar-brand
-  {
-    font-family: 'Pacifico', cursive;
+  .navbar-brand {
+    font-family: "Pacifico", cursive;
     color: rgb(214, 208, 208);
     font-size: 30px;
     align-items: center;
     justify-content: center;
   }
-  .navbar-brand:hover
-  {
+  .navbar-brand:hover {
     color: #85bdbf;
     transition: 0.5s;
   }
-  #ertekelesek
-  {
+  #ertekelesek {
     background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -143,47 +126,35 @@ body {
   }
 
   /**Jobb oldali iconok */
-  .log-in
-  {
+  .log-in {
     margin: 0px 10px 0px 10px;
     color: rgb(214, 208, 208);
     font-size: 30px;
   }
-  .log-in:hover
-  {
+  .log-in:hover {
     color: green !important;
   }
-  .discord
-  {
+  .discord {
     color: rgb(214, 208, 208);
     margin: 0px 10px 0px 10px;
     font-size: 30px;
   }
-  .discord:hover
-  {
+  .discord:hover {
     color: grey !important;
   }
-  .facebook
-  {
-    color: rgb(214, 208, 208); 
+  .facebook {
+    color: rgb(214, 208, 208);
     margin: 0px 10px 0px 10px;
     font-size: 30px;
   }
-  .facebook:hover
-  {
+  .facebook:hover {
     color: blue;
-    
   }
   /** */
 }
 /**Hamburger menu -> nagy méret 992px alatti*/
-@media(max-width:992px)
-{
-
+@media (max-width: 992px) {
 }
-
-
-
 
 /**
  * @media screen and (max-width: 992px) {
