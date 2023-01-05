@@ -137,25 +137,25 @@
 @media (max-width: 850px) {
 
   .CounterItemTittle{
-    padding-top: 70px;
-      font-size: 20px;
+    padding-top: 60px;
+      font-size: 25px;
       
       
   }
   
   #SalesCounter{
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 0px;
     margin-top: 15px;
   }
   #SatisfiedCounter{
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 0px;
     margin-top: 15px;
 
   }
   #FinishedCounter{
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 0px;
     margin-top: 15px;
 
@@ -165,28 +165,28 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 692px) {
 
   .CounterItemTittle{
-    padding-top: 85px;
-      font-size: 15px;
+    padding-top: 70px;
+      font-size: 20px;
       
       
   }
   
   #SalesCounter{
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 0px;
     margin-top: 10px;
   }
   #SatisfiedCounter{
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 0px;
     margin-top: 10px;
 
   }
   #FinishedCounter{
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 0px;
     margin-top: 10px;
 
@@ -196,30 +196,61 @@
     padding-bottom: 0;
   }
 }
-@media (max-width: 415px) {
+@media (max-width: 550px) {
+
+  .CounterItemTittle{
+    padding-top: 80px;
+      font-size: 17px;
+      
+      
+  }
+  
+  #SalesCounter{
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-top: 17px;
+  }
+  #SatisfiedCounter{
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-top: 17px;
+
+  }
+  #FinishedCounter{
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-top: 17px;
+
+  }
+
+  .CounterContainer{
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 470px) {
 
   .CounterItemTittle{
     padding-top: 90px;
-      font-size: 12px;
+      font-size: 13px;
       
       
   }
   
   #SalesCounter{
-    font-size: 12px;
+    font-size: 13px;
     margin-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 5px;
   }
   #SatisfiedCounter{
-    font-size: 12px;
+    font-size: 13px;
     margin-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 5px;
 
   }
   #FinishedCounter{
-    font-size: 12px;
+    font-size: 13px;
     margin-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 5px;
 
   }
 
@@ -227,7 +258,7 @@
     padding-bottom: 0;
   }
 }
-@media (max-width: 336px) {
+@media (max-width: 362px) {
 
   .CounterItemTittle{
     padding-top: 100px;
