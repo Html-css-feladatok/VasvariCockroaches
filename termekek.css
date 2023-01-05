@@ -91,6 +91,7 @@ i{
 }
 i{
   font-family: pm;
+  display: inline;
 }
 
 
@@ -168,7 +169,7 @@ body {
 }
 
 .kosarba{
-  font-size: 40px;
+  font-size: 25px;
   background-color: aliceblue;
   color: black;
   padding: 5px 10px 5px 10px;
@@ -273,4 +274,9 @@ body {
 
 .navbarkosardb{
   font-size: 28px;
+}
+
+.minuss{
+  z-index: 100;
+  padding: 10px;
 }

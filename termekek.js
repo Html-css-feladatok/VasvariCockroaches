@@ -27,11 +27,26 @@ function toggleMenu(){
     if(!showMenu){
         regisztracioresz.classList.add('open');
         regisztracioreszszoveg.classList.add('open');
+        regisztracioresz2.classList.remove('open');
+        regisztracioreszszoveg2.classList.remove('open');
+        regisztracioresz3.classList.remove('open');
+        regisztracioreszszoveg3.classList.remove('open');
+        
+        
         navbar.classList.add('nonvisible')
+        setTimeout(()=>{
+            window.scrollTo(0,0)
+
+        },800)
+
         showMenu = true;    
     }else{
         regisztracioresz.classList.remove('open');
         regisztracioreszszoveg.classList.remove('open');
+        regisztracioresz2.classList.remove('open');
+        regisztracioreszszoveg2.classList.remove('open');
+        regisztracioresz3.classList.remove('open');
+        regisztracioreszszoveg3.classList.remove('open');
         navbar.classList.remove('nonvisible')
 
         showMenu = false;
@@ -48,7 +63,18 @@ function toggleMenu2(){
     if(!showMenu2){
         regisztracioresz2.classList.add('open');
         regisztracioreszszoveg2.classList.add('open');
+        regisztracioresz.classList.remove('open');
+        regisztracioreszszoveg.classList.remove('open');
+        regisztracioresz3.classList.remove('open');
+        regisztracioreszszoveg3.classList.remove('open');
+
+
         navbar.classList.add('nonvisible')
+        setTimeout(()=>{
+            window.scrollTo(0,0)
+
+        },800)
+
         showMenu2 = true;    
     }else{
         regisztracioresz2.classList.remove('open');
@@ -71,7 +97,20 @@ function toggleMenu3(){
     if(!showMenu3){
         regisztracioresz3.classList.add('open');
         regisztracioreszszoveg3.classList.add('open');
+
+        regisztracioresz2.classList.remove('open');
+        regisztracioreszszoveg2.classList.remove('open');
+        regisztracioresz.classList.remove('open');
+        regisztracioreszszoveg.classList.remove('open');
+
+
         navbar.classList.add('nonvisible')
+
+        setTimeout(()=>{
+            window.scrollTo(0,0)
+
+        },800)
+
         showMenu3 = true;    
     }else{
         regisztracioresz3.classList.remove('open');
@@ -84,114 +123,6 @@ function toggleMenu3(){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var scrollableElement = document.getElementById('weblap');
-let fel = false
-
-
-scrollableElement.addEventListener('wheel', checkScrollDirection);
-
-function checkScrollDirection(event) {
-      if (checkScrollDirectionIsUp(event)) {
-        fel = true
-        document.getElementById("weblap").style.overflowY ="visible"
-    
-      } else {
-        fel = false
-      }
-}
-    
-function checkScrollDirectionIsUp(event) {
-        if (event.wheelDelta) {
-          return event.wheelDelta > 0;
-        }
-        return event.deltaY < 0;
-}
-    
-    
-    
-
-    
-window.addEventListener('scroll', function() {
-    
-    var element = document.querySelector('.stopper');
-    var position = element.getBoundingClientRect();
-    var element2 = document.querySelector('.stopper2');
-    var position2 = element2.getBoundingClientRect();
-    var element3 = document.querySelector('.stopper3');
-    var position3 = element3.getBoundingClientRect();
-
-        // checking whether fully visible
-    if(position.top >= 0 && position.bottom <= window.innerHeight) {
-            if (fel == false){
-                stopscroll()
-    
-            }
-        }
-    if(position2.top >= 0 && position2.bottom <= window.innerHeight) {
-            if (fel == false){
-                stopscroll2()
-    
-            }
-        }
-    if(position3.top >= 0 && position3.bottom <= window.innerHeight) {
-            if (fel == false){
-                stopscroll3()
-    
-            }
-        }
-    
-        // checking for partial visibility
-        if(position.top < window.innerHeight && position.bottom >= 0) {
-        }
-
-
-
-        
-    });
-
-
-function stopscroll(){
-        document.getElementById("weblap").style.overflow ="hidden"
-        var scrollDiv = document.getElementById("termek1stopper").offsetTop;
-        window.scrollTo({ top: scrollDiv, behavior:"instant"});   
-    
-    
-    }
-
-
-function stopscroll2(){
-        document.getElementById("weblap").style.overflow ="hidden"
-        var scrollDiv = document.getElementById("termek2stopper").offsetTop;
-        window.scrollTo({ top: scrollDiv, behavior:"instant"});   
-    
-    
-    }
-function stopscroll3(){
-        document.getElementById("weblap").style.overflow ="hidden"
-        var scrollDiv = document.getElementById("termek3stopper").offsetTop;
-        window.scrollTo({ top: scrollDiv, behavior:"instant"});   
-    
-    
-    }
 
 
 
