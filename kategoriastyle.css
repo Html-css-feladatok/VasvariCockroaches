@@ -45,8 +45,8 @@ body {
     overflow-x: hidden;
 }
 
-#kategoriak {
-    margin-top: 40px;
+.alcim {
+    margin-top: 20px;
     margin-bottom: 25px;
     font-family: pb;
     font-size: 70px;
@@ -190,8 +190,8 @@ body {
 
 @media screen and (max-width: 991px) {
     
-    #kategoriak {
-        font-size: 40px;    
+    .alcim {
+        font-size: 45px;
     }
 
     #cim {
