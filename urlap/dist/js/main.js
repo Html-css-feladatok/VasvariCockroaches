@@ -39,11 +39,6 @@ function toggleMenu(){
 }
 
 
-
-
-
-
-
 let showMenu2 = false;
 
 bezarasBtn2.addEventListener('click', toggleMenu2);
@@ -68,8 +63,6 @@ function toggleMenu2(){
 }
 
 
-
-
 let bordertype2 = false;
 
 
@@ -83,9 +76,6 @@ function bordertypes2(){
         kulsodoboz2.classList.add("toltes");
     }
 }
-
-
-
 
 
 let bordertype = false;

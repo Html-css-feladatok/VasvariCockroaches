@@ -1,0 +1,56 @@
+
+body{
+    width: 100%;
+    height: 100%;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    padding: 50px;
+    background-color: grey;
+    margin: 10px;
+    font-size: 30px;
+    transition: all 3s ease-in-out;
+
+
+}
+
+.elem{
+    background-image: linear-gradient(to bottom,#c2fcf7, #c2fcf7 33.33333%, #85bdbf 66.66666%, #246464);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    background-position: top;
+    transition:all 1s ease-in-out;
+
+
+}
+
+.elem.hover{
+    background-position: bottom;
+
+
+}
+
+.elem.hover-out{
+    background-position: top;
+
+}
+.elem2.hover{
+    background-color: green;
+}
+
+.elem2.hover-out{
+    background-color: gray;
+}
+.elem3.hover{
+    background-color: green;
+}
+
+.elem3.hover-out{
+    background-color: gray;
+}

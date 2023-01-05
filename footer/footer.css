@@ -1,0 +1,53 @@
+@font-face {
+    font-family: pb;
+    src: url("../font/pb.ttf");
+  }
+  @font-face {
+    font-family: pm;
+    src: url("../font/pm.ttf");
+  }
+  @font-face {
+    font-family: pr;
+    src: url("../font/pr.ttf");
+  }
+
+
+.FooterItemTitle{
+    font-family: pm;
+    padding-bottom: 0.25rem 0;
+    background:-webkit-linear-gradient(#85bdbf, #c2fcf7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.FooterItemLink{
+    display: block;
+    text-decoration: none;
+    font-family: pr;
+    padding: 0.25rem 0;
+    color: #6b9597;
+    cursor: pointer;
+    font-size: 20px;
+}
+.FooterItemLink:link, .FooterItemLink:visited, .FooterItemLink:hover,.FooterItemLink:active{
+    color: #6b9597;
+
+}
+.footerItemInput{
+    
+}
+
+
+#CopyRight{
+    font-family: pm;
+    color: #246464;
+}
+
+footer{
+    background: #071717;
+    padding: 40px 250px;
+    width: 100%;
+}
+body{
+    background: #040f0f;
+}

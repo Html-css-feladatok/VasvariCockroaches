@@ -1,0 +1,276 @@
+
+
+@font-face {
+  font-family: pb;
+  src: url("../font/pb.ttf");
+}
+@font-face {
+  font-family: pm;
+  src: url("../font/pm.ttf");
+}
+@font-face {
+  font-family: pr;
+  src: url("../font/pr.ttf");
+}
+
+
+.header1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: hidden;
+  z-index: 10;
+}
+.header1.open {
+  visibility: visible;
+  position: inherit;
+}
+.header1 .header1_item {
+  height: fit-content;
+  background: #040f0f;
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+}
+.header1 .header1_item.open {
+  transform: translateY(0);
+  visibility:visible;
+}
+.header2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: hidden;
+  z-index: 10;
+}
+.header2.open {
+  visibility: visible;
+  position: inherit;
+}
+.header2 .header2_item {
+  height: fit-content;
+  background: #040f0f;
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+}
+.header2 .header2_item.open {
+  transform: translateY(0);
+  visibility:visible;
+}
+i{
+  font-family: pm;
+}
+.header3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: hidden;
+  z-index: 10;
+}
+.header3.open {
+  visibility: visible;
+  position: inherit;
+}
+.header3 .header3_item {
+  height: fit-content;
+  background: #040f0f;
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+}
+.header3 .header3_item.open {
+  transform: translateY(0);
+  visibility:visible;
+}
+i{
+  font-family: pm;
+}
+
+
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: pm;
+  src: url(font/pm.ttf);
+}
+
+@font-face {
+  font-family: pr;
+  src: url(font/pr.ttf);
+}
+
+@font-face {
+  font-family: pb;
+  src: url(font/pb.ttf);
+}
+
+html{
+  width: 100vw;
+}
+
+body {
+    background-color: #040f0f;
+    color: white;
+    font-family: pr;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#kategoriak {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-family: pb;
+    font-size: 70px;
+    background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#jelenlegitermek{
+  color: #C2FCF7;
+}  
+
+#termek_prev > a{
+  color: white;
+  text-decoration: none;
+}
+
+#termek_prev > a:hover{
+  animation: 0.3s termekprev_hover forwards;
+}
+
+@keyframes termekprev_hover {
+  from { color:white; }
+  to { color:#C2FCF7 }
+  
+}
+
+#termeknev{
+  font-size: 50px;
+  color: #C2FCF7;
+}
+
+#leiras{
+  font-size: 25px;
+}
+
+.kosarba{
+  font-size: 40px;
+  background-color: aliceblue;
+  color: black;
+  padding: 5px 10px 5px 10px;
+  width: 30%;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.kosarba2{
+  font-size: 40px;
+  background-color: aliceblue;
+  color: black;
+  padding: 5px 10px 5px 10px;
+  width: 30%;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.kosarba3{
+  font-size: 40px;
+  background-color: aliceblue;
+  color: black;
+  padding: 5px 10px 5px 10px;
+  width: 30%;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.kosarba:hover{
+  animation: 0.3s kosarba forwards;
+}
+.kosarba2:hover{
+  animation: 0.3s kosarba forwards;
+}
+.kosarba3:hover{
+  animation: 0.3s kosarba forwards;
+}
+
+#ar{
+  font-size: 42px;
+}
+
+#felsorolas{
+  line-height: 2em;
+  font-size: 1.2em;
+}
+
+@keyframes kosarba {
+  from {     
+      background-color: aliceblue;
+      color: black;
+  }
+  to {
+      background-color: #85bdbf;
+      color: white;
+  }
+  
+}
+
+
+
+
+.navbar.nonvisible{
+  visibility: hidden;
+}
+
+.kosarba.active{
+  transition: 0.5s;
+  box-shadow: 0 0 10px #c2fcf7, 0 0 30px #c2fcf7, 0 0 60px #c2fcf7, 0 0 100px #c2fcf7;
+
+}
+.kosarba.nonactive{
+  transition: 0.5s;
+  box-shadow: 0 0 10px#040f0f, 0 0 30px #040f0f, 0 0 60px #040f0f, 0 0 100px #040f0f;
+
+}
+.kosarba2.active{
+  transition: 0.5s;
+  box-shadow: 0 0 10px #c2fcf7, 0 0 30px #c2fcf7, 0 0 60px #c2fcf7, 0 0 100px #c2fcf7;
+
+}
+.kosarba2.nonactive{
+  transition: 0.5s;
+  box-shadow: 0 0 10px#040f0f, 0 0 30px #040f0f, 0 0 60px #040f0f, 0 0 100px #040f0f;
+
+}
+.kosarba3.active{
+  transition: 0.5s;
+  box-shadow: 0 0 10px #c2fcf7, 0 0 30px #c2fcf7, 0 0 60px #c2fcf7, 0 0 100px #c2fcf7;
+
+}
+.kosarba3.nonactive{
+  transition: 0.5s;
+  box-shadow: 0 0 10px#040f0f, 0 0 30px #040f0f, 0 0 60px #040f0f, 0 0 100px #040f0f;
+
+}
+
+.navkosar{
+  font-size: 36px !important;
+}
+
+.navbarkosardb{
+  font-size: 28px;
+}
