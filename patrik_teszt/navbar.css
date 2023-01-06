@@ -270,29 +270,235 @@
 /**/
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   #logo {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
+  }
+  /* Háttér színe */
+  .navbar {
+    background-color: #051010;
+  }
+
+  .navbar-brand {
+    background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .navbar .navbar-nav .nav-item a {
+    background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    transition: 0.5s;
+    padding-left: 10px;
+  }
+  .navbar .navbar-nav .nav-item a:hover {
+    background: -webkit-linear-gradient(#246464, #246464, #c2fcf7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25.5px;
+  }
+  /* Log-in */
+  .navbar .navbar-nav .log-in {
+    color: white;
+    font-size: 26px;
+    margin: 0;
+  }
+  .navbar .navbar-nav .log-in:hover {
+    color: rgb(45, 68, 45);
+  }
+  /* Discord */
+  .navbar .navbar-nav .discord {
+    color: white;
+    font-size: 26px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .navbar .navbar-nav .discord:hover {
+    color: gray;
+  }
+  /* Facebook */
+  .navbar .navbar-nav .facebook {
+    color: white;
+    font-size: 26px;
+    margin: 0;
+  }
+  .navbar .navbar-nav .facebook:hover {
+    color: rgb(30, 30, 92);
+  }
+  .home {
+    display: none;
+  }
+  .star {
+    display: none;
+  }
+  .check {
+    display: none;
+  }
+  .envelope {
+    display: none;
+  }
+  .box {
+    display: none;
+  }
+  .icon-elrendezes {
+    flex-direction: row;
+    justify-content: center;
   }
 }
-
-/* Large resolution */
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) and (max-width: 1399px)
+{
+  #logo {
+    width: 80px;
+    height: 80px;
+  }
+  /* Háttér színe */
   .navbar {
-    background-color: red;
-    padding: 0px;
-    margin: 0px;
-    font-size: 20px;
-    min-height: 50px;
+    background-color: #051010;
   }
-  #ertekelesek::before {
-    display: block;
-    height: 90px; /* equal to the header height */
-    visibility: hidden;
-    content: "";
+
+  .navbar-brand {
+    background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-  #brand-img {
-    margin-left: 25px;
-    height: 100px;
-    width: 100px;
+  .navbar .navbar-nav .nav-item a {
+    background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 29px;
+    transition: 0.5s;
+    padding-left: 20px;
+  }
+  .navbar .navbar-nav .nav-item a:hover {
+    background: -webkit-linear-gradient(#246464, #246464, #c2fcf7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 29.5px;
+  }
+  /* Log-in */
+  .navbar .navbar-nav .log-in {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+  }
+  .navbar .navbar-nav .log-in:hover {
+    color: rgb(45, 68, 45);
+  }
+  /* Discord */
+  .navbar .navbar-nav .discord {
+    color: white;
+    font-size: 30px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .navbar .navbar-nav .discord:hover {
+    color: gray;
+  }
+  /* Facebook */
+  .navbar .navbar-nav .facebook {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+  }
+  .navbar .navbar-nav .facebook:hover {
+    color: rgb(30, 30, 92);
+  }
+  .home {
+    display: none;
+  }
+  .star {
+    display: none;
+  }
+  .check {
+    display: none;
+  }
+  .envelope {
+    display: none;
+  }
+  .box {
+    display: none;
+  }
+  .icon-elrendezes {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+/**XXL RESOLUTION */
+@media screen and (min-width: 1400px)
+{
+  #logo {
+    width: 80px;
+    height: 80px;
+  }
+  /* Háttér színe */
+  .navbar {
+    background-color: #051010;
+  }
+
+  .navbar-brand {
+    background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .navbar .navbar-nav .nav-item a {
+    background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 34px;
+    transition: 0.5s;
+    padding-left: 30px;
+  }
+  .navbar .navbar-nav .nav-item a:hover {
+    background: -webkit-linear-gradient(#246464, #246464, #c2fcf7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 34.5px;
+  }
+  /* Log-in */
+  .navbar .navbar-nav .log-in {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+  }
+  .navbar .navbar-nav .log-in:hover {
+    color: rgb(45, 68, 45);
+  }
+  /* Discord */
+  .navbar .navbar-nav .discord {
+    color: white;
+    font-size: 30px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .navbar .navbar-nav .discord:hover {
+    color: gray;
+  }
+  /* Facebook */
+  .navbar .navbar-nav .facebook {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+  }
+  .navbar .navbar-nav .facebook:hover {
+    color: rgb(30, 30, 92);
+  }
+  .home {
+    display: none;
+  }
+  .star {
+    display: none;
+  }
+  .check {
+    display: none;
+  }
+  .envelope {
+    display: none;
+  }
+  .box {
+    display: none;
+  }
+  .icon-elrendezes {
+    flex-direction: row;
+    justify-content: center;
   }
 }
