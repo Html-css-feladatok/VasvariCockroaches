@@ -1,0 +1,399 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: pb;
+  src: url("../font/pb.ttf");
+}
+@font-face {
+  font-family: pm;
+  src: url("../font/pm.ttf");
+}
+@font-face {
+  font-family: pr;
+  src: url("../font/pr.ttf");
+}
+@media screen and (max-width: 360px) {
+  div.home {
+    font-size: 30px;
+  }
+  div.row h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 324px) {
+  div.home {
+    font-size: 30px;
+  }
+  div.row h2 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 302px) {
+  div.home {
+    font-size: 30px;
+  }
+  div.row h2 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 285px) {
+  div.home {
+    font-size: 30px;
+  }
+  div.header1_item {
+    padding: 0;
+  }
+  div.header2_item {
+    padding: 0;
+  }
+  div.row h2 {
+    font-size: 14px;
+  }
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body {
+  background: #040f0f;
+  font-size: 50px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+h2 {
+  color: #c2fcf7;
+  font-family: pm;
+}
+
+a {
+  font-family: pm;
+  text-decoration: none;
+  color: #85bdbf;
+  padding: 5px;
+  margin: 20px;
+}
+a:hover {
+  color: #c2fcf7;
+  transition: all 0.5s ease-in-out;
+}
+
+.header1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: hidden;
+}
+.header1.open {
+  visibility: visible;
+}
+.header1 .header1_item {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background: #122424;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+  font-family: pr;
+  font-size: 22px;
+}
+.header1 .header1_item.open {
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.header2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: hidden;
+}
+.header2.open2 {
+  visibility: visible;
+}
+.header2 .header2_item {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background: #122424;
+  padding: 0 1rem;
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+  font-family: pr;
+  font-size: 22px !important;
+}
+.header2 .header2_item.open2 {
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.box {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
+
+input {
+  width: 90%;
+  font-family: pr;
+}
+
+.btn_inside_regisztracio {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+}
+.btn_inside_regisztracio:hover {
+  background: #2e3c3a;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn_inside_login {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+}
+.btn_inside_login:hover {
+  background: #2e3c3a;
+  transition: all 0.5s ease-in-out;
+}
+
+.toltes {
+  --angle: 0deg;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  background: #061313;
+  border: 5px solid;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  -o-border-image: linear-gradient(var(--angle), #040f0f, #122424, #85bdbf, #c2fcf7) 1;
+     border-image: linear-gradient(var(--angle), #040f0f, #122424, #85bdbf, #c2fcf7) 1;
+  -webkit-animation: topbordersize 2s infinite;
+          animation: topbordersize 2s infinite;
+}
+
+@-webkit-keyframes topbordersize {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+@keyframes topbordersize {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.bezarasbox {
+  display: inline;
+  position: relative;
+  left: 35px;
+  bottom: 10px;
+}
+
+.btn-login {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.btn-login:hover {
+  background: #c2fcf7;
+  transition: 1.5s;
+  box-shadow: 0 0 10px #c2fcf7, 0 0 30px #c2fcf7, 0 0 60px #c2fcf7, 0 0 100px #c2fcf7;
+  color: #04554e;
+}
+
+.btn-regisztracio:hover {
+  background: #c2fcf7;
+  transition: 1.5s;
+  box-shadow: 0 0 10px #c2fcf7, 0 0 30px #c2fcf7, 0 0 60px #c2fcf7, 0 0 100px #c2fcf7;
+  color: #04554e;
+}
+
+#select-year {
+  width: 90px;
+}
+
+#select-month {
+  width: 160px;
+}
+
+#select-day {
+  width: 65px;
+}
+
+@media (max-width: 422px) {
+  #select-year {
+    width: 90px;
+  }
+  #select-month {
+    width: 160px;
+  }
+  #select-day {
+    width: 55px;
+  }
+}
+@media (max-width: 412px) {
+  #select-year {
+    width: 90px;
+  }
+  #select-month {
+    width: 135px;
+  }
+  #select-day {
+    width: 55px;
+  }
+}
+@media (max-width: 387px) {
+  #select-year {
+    width: 70px;
+    font-size: 20px;
+  }
+  #select-month {
+    width: 135px;
+    font-size: 20px;
+  }
+  #select-day {
+    width: 45px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 360px) {
+  #select-year {
+    width: 100%;
+    font-size: 18px;
+  }
+  #select-month {
+    width: 100%;
+    font-size: 18px;
+  }
+  #select-day {
+    width: 100%;
+    font-size: 18px;
+  }
+  .container {
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 285px) {
+  #select-year {
+    width: 100%;
+    font-size: 18px;
+  }
+  #select-month {
+    width: 100%;
+    font-size: 18px;
+  }
+  #select-day {
+    width: 100%;
+    font-size: 18px;
+  }
+  .container {
+    font-size: 10px !important;
+  }
+}
+@media (max-height: 764px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  top: 15px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #c2fcf7;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,260 @@
+
+  .CounterContainer{
+    background-color: #040f0f;
+    color:  #c2fcf7;
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    margin-top: 100px;
+    position: relative;
+    transform: translateX(100%);
+    width: 0%;
+}
+
+.CounterContainer.visible{
+  transition: 1.5s;
+  transform: translateX(0%);
+  width: 100%;
+}
+
+.CounterItemTittle{
+  padding-top: 30px;
+    font-family:pb;
+    font-size: 50px;
+    border-bottom: 2px #c2fcf7 solid;
+    margin-bottom: 0;
+    opacity: 0;
+    
+    
+}
+
+#SalesCounter{
+  font-family: pm;
+  font-size: 50px;
+  margin-top: 30px;
+  text-align: center;
+  opacity: 0;
+}
+#SatisfiedCounter{
+  font-family: pm;
+  font-size: 50px;
+  margin-top: 30px;
+  text-align: center;
+  opacity: 0;
+}
+#FinishedCounter{
+  font-family: pm;
+  font-size: 50px;
+  margin-top: 30px;
+  text-align: center;
+  opacity: 0;
+}
+
+ #SalesCounter, #SatisfiedCounter, #FinishedCounter, .CounterItemTittle{
+  visibility: hidden;
+}
+#SalesCounter.visible, #SatisfiedCounter.visible, #FinishedCounter.visible, .CounterItemTittle.visible{
+  visibility: visible;
+}
+#SalesCounter.fade, #SatisfiedCounter.fade, #FinishedCounter.fade, .CounterItemTittle.fade{
+  transition: 1s;
+  opacity: 1;
+}
+
+
+
+
+@font-face {
+  font-family: pb;
+  src: url("../font/pb.ttf");
+}
+@font-face {
+  font-family: pm;
+  src: url("../font/pm.ttf");
+}
+@font-face {
+  font-family: pr;
+  src: url("../font/pr.ttf");
+}
+
+
+
+
+@media (max-width: 1417px) {
+
+  .CounterItemTittle{
+    padding-top: 20px;
+      font-size: 40px;
+      
+      
+  }
+  
+  #SalesCounter{
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  #SatisfiedCounter{
+    font-size: 40px;
+    margin-bottom: 20px;
+
+  }
+  #FinishedCounter{
+    font-size: 40px;
+    margin-bottom: 20px;
+
+  }
+  .CounterContainer{
+    padding-bottom: 0px;
+  }
+}
+@media (max-width: 1120px) {
+
+  .CounterItemTittle{
+    padding-top: 40px;
+      font-size: 30px;
+      
+      
+  }
+  
+  #SalesCounter{
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+  #SatisfiedCounter{
+    font-size: 30px;
+    margin-bottom: 0px;
+
+  }
+  #FinishedCounter{
+    font-size: 30px;
+    margin-bottom: 0px;
+
+  }
+  .CounterContainer{
+    padding-bottom: 0px;
+  }
+}
+@media (max-width: 850px) {
+
+  .CounterItemTittle{
+    padding-top: 70px;
+      font-size: 20px;
+      
+      
+  }
+  
+  #SalesCounter{
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+  }
+  #SatisfiedCounter{
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+
+  }
+  #FinishedCounter{
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+
+  }
+  .CounterContainer{
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .CounterItemTittle{
+    padding-top: 85px;
+      font-size: 15px;
+      
+      
+  }
+  
+  #SalesCounter{
+    font-size: 15px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  #SatisfiedCounter{
+    font-size: 15px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+
+  }
+  #FinishedCounter{
+    font-size: 15px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+
+  }
+
+  .CounterContainer{
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 415px) {
+
+  .CounterItemTittle{
+    padding-top: 90px;
+      font-size: 12px;
+      
+      
+  }
+  
+  #SalesCounter{
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  #SatisfiedCounter{
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+
+  }
+  #FinishedCounter{
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+
+  }
+
+  .CounterContainer{
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 336px) {
+
+  .CounterItemTittle{
+    padding-top: 100px;
+      font-size: 10px;
+      
+      
+  }
+  
+  #SalesCounter{
+    font-size: 10px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+  }
+  #SatisfiedCounter{
+    font-size: 10px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+
+  }
+  #FinishedCounter{
+    font-size: 10px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+
+  }
+
+  .CounterContainer{
+    padding-bottom: 0;
+  }
+}
