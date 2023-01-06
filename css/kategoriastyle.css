@@ -160,34 +160,6 @@ body {
   font-size: 20px;
 }
 
-.navbar-nav {
-  margin: 0 auto;
-  position: sticky;
-  padding-top: 0px;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.navbar-nav a {
-  font-size: 30px;
-  margin-left: 50px;
-  font-family: pm;
-}
-
-#navlogo {
-  width: 100px;
-}
-
-.navbar-nav a:hover {
-  color: #85bdbf;
-}
-
-.navbar{
-  background-image: url("src/nb.png");
-}
-
 
 
 @media screen and (max-width: 991px) {

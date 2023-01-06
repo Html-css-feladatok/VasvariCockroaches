@@ -12,10 +12,92 @@
     <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/kategoriastyle.css">
     <link rel="stylesheet" href="./css/termekek.css">
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/content.css" />
+    <link rel="stylesheet" href="./icons/css/all.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css?v=7857324"
+  />
+  <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"
+  />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Termékeink</title>
 </head>
 <body id="weblap">
+
+  <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#folap"
+        ><img src="./src/logo.png" alt="" id="logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"
+          ><i class="fa-solid fa-bars"></i
+        ></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              ><i class="fa-sharp fa-solid fa-house home"></i>Kezdőlap</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kateg"
+              ><i class="fa-solid fa-star star"></i>Kategóriák</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#zuhanytalcak"
+              ><i class="fa-solid fa-water water"></i>Zuhanytálcáink</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#szakember"
+              ><i class="fa-solid fa-hammer hammer"></i>Szakembereink</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gyik"
+              ><i class="fa-solid fa-question question"></i>GYIK</a
+            >
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto d-lg-inline-flex icon-elrendezes">
+          <li class="log-in">
+            <a href="urlap.html" class="log-in"
+              ><i class="fa-solid fa-right-to-bracket"></i
+            ></a>
+          </li>
+          <li class="discord">
+            <a class="discord"><i class="fa-brands fa-discord"></i></a>
+          </li>
+          <li class="facebook">
+            <a href="https://www.facebook.com/" class="facebook"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
   <section class="termek1">
     
       <div class="header1">
@@ -312,23 +394,7 @@
 
 
 
-<section id="weblap">
-  
-    <nav data-aos="fade-in" class="navbar sticky-top navbar-expand-lg navbar-dark mt-3 navigacio" style="padding:0px" id="navigacio">
-      <div class="container-fluid p-0">
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav text-center">
-            <div><a class="navbar-brand" href="#"><img id="navlogo" class="mt-1"src="./src/logo.png" alt=""></a></div>
-            <a class="nav-link" href="index2_teszt.html">Főoldal</a>
-            <a class="nav-link active" aria-current="page" href="kategoriak.html">Termékeink</a>
-            <a class="nav-link" href="#">Kapcsolat</a>
-            <a class="nav-link" href="urlap.html">Legyél tag</a>
-            <i class="fa fa-shopping-cart navkosar"></i><span class="navbarkosardb">&nbsp:&nbsp0</span>
-      </div>
-        </div>
-      </div>
-    </nav>
-  
+<section id="weblap">  
   
   <div class="container">
     <div class="col-12 text-center" data-aos="fade-in">
@@ -345,7 +411,7 @@
   
       <div class="section-header">
         <div class="col text-center text-lg-start">
-          <p class="alcim">Kategóriák</p>
+          <p id="kateg" class="alcim">Kategóriák</p>
         </div>
       </div>
   
@@ -1002,7 +1068,7 @@
     </div>
   </section><!-- End Menu Section -->
   
-  <div class="container" data-aos="fade-in">
+  <div id="zuhanytalcak" class="container" data-aos="fade-in">
     <div class="col text-center text-lg-start">
       <p class="alcim">Zuhanytálcáink</p>
     </div>
@@ -1087,7 +1153,7 @@
       </div>
     </div>
   
-    <div class="container" data-aos="fade-in">
+    <div id="szakember" class="container" data-aos="fade-in">
       <div class="col text-center text-lg-start">
         <p class="alcim">Szakembereink</p>
       </div>
@@ -1128,7 +1194,7 @@
       </div>
     </div>
   
-    <div class="container" data-aos="fade-in">
+    <div id="gyik" class="container" data-aos="fade-in">
       <div class="col text-center text-lg-start mt-0">
         <p class="alcim">GYIK</p>
       </div>
@@ -1237,6 +1303,38 @@
     </div>
   </div>
 </section>
+
+<footer class="FooterContainer" style="margin-top: 100px;">
+  <div class="row">
+      <div class="col col-xl-4">
+          <h3 class="FooterItemTitle">Ügyfélszolgálat</h3>
+          <a class="FooterItemLink">Kapcsolat</a>
+          <a class="FooterItemLink">GYIK</a>
+          <a class="FooterItemLink">Visszatérítés</a>
+          <a class="FooterItemLink">Hibás vagy sérült termékek</a>
+          <a class="FooterItemLink">Rendelés törlése vagy módosítása</a>
+      
+      </div>
+      <div class="col col-xl-4">
+          <h3 class="FooterItemTitle">Általános</h3>
+          <a class="FooterItemLink">Rólunk</a>
+          <a class="FooterItemLink">Magazin</a>
+      
+      </div>
+      <div class="col col-xl-4">
+          <h3 class="FooterItemTitle">Fiók</h3>
+          <a class="FooterItemLink">Belépés/Regisztráció</a>
+          <a class="FooterItemLink">Kívánságlista</a>
+          <a class="FooterItemLink">Kosár</a>
+      </div>
+  </div>
+  <div>
+      <h6 id="CopyRight" class=""><span class="CopyRightLogo">&#xa9;</span> 2023 VasvariCockroaches All Rights Reserved.</h6>
+  </div>
+
+</footer>
+
+
 <script src="./assets/vendor/aos/aos.js"></script>
 <script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="./assets/vendor/purecounter/purecounter_vanilla.js"></script>
