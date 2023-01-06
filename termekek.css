@@ -130,33 +130,14 @@ body {
     overflow-x: hidden;
 }
 
-#kategoriak {
-    margin-top: 40px;
-    margin-bottom: 25px;
-    font-family: pb;
-    font-size: 70px;
-    background: -webkit-linear-gradient(#246464, #85bdbf, #c2fcf7, #c2fcf7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.kep_column{
+  width: 540px;
+  height: 520px;
 }
 
-#jelenlegitermek{
-  color: #C2FCF7;
-}  
-
-#termek_prev > a{
-  color: white;
-  text-decoration: none;
-}
-
-#termek_prev > a:hover{
-  animation: 0.3s termekprev_hover forwards;
-}
-
-@keyframes termekprev_hover {
-  from { color:white; }
-  to { color:#C2FCF7 }
-  
+.termekkep_detail{
+  width: 520px;
+  height: 520px;
 }
 
 #termeknev{
@@ -178,6 +159,19 @@ body {
   border-radius: 20px;
   cursor: pointer;
 }
+
+.eltavolit{
+  font-size: 15px;
+  background-color: aliceblue;
+  color: black;
+  padding: 5px 10px 5px 10px;
+  width: 30%;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 0px
+}
+
 .kosarba2{
   font-size: 40px;
   background-color: aliceblue;
@@ -202,6 +196,12 @@ body {
 .kosarba:hover{
   animation: 0.3s kosarba forwards;
 }
+
+.eltavolit:hover{
+  animation: 0.3s kosarba forwards;
+}
+
+
 .kosarba2:hover{
   animation: 0.3s kosarba forwards;
 }
@@ -228,6 +228,105 @@ body {
       color: white;
   }
   
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .kep_column{
+    width: 472px;
+    height: 472px;
+  }
+  
+  .termekkep_detail{
+    width: 455px;
+    height: 455px;
+  }
+
+  #termeknev{
+    font-size: 40px;
+  }
+  
+  #leiras{
+    font-size: 20px;
+  }
+  
+  .kosarba{
+    width: 35%;
+    font-size: 20px;
+  }
+
+  .eltavolit{
+    width: 35%;
+    font-size: 15px;
+  }
+
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .kep_column{
+    width: 395px;
+    height: 395px;
+  }
+  
+  .termekkep_detail{
+    width: 375px;
+    height: 375px;
+  }
+
+  #termeknev{
+    font-size: 27px;
+  }
+  
+  #leiras{
+    font-size: 17px;
+  }
+
+  #ar{
+    font-size: 32px;
+  }
+  
+  .kosarba{
+    width: 35%;
+    font-size: 15px;
+  }
+
+  .eltavolit{
+    width: 35%;
+    font-size: 10px;
+  }
+
+
+}
+
+@media screen and (max-width: 991px) {
+  .kep_column{
+    width: 372px;
+    height: 372px;
+    margin: 0 auto;
+  }
+  
+  .termekkep_detail{
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+  }
+
+  #termeknev{
+    font-size: 25px;
+  }
+  
+  #leiras{
+    font-size: 20px;
+  }
+  
+  .kosarba{
+    width: 50%;
+  }
+
+  .eltavolit{
+    width: 50%;
+  }
+
 }
 
 

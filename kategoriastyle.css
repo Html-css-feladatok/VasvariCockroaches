@@ -191,7 +191,7 @@ body {
 @media screen and (max-width: 991px) {
     
     .alcim {
-        font-size: 45px;
+        font-size: 35px;
     }
 
     #cim {
@@ -208,11 +208,6 @@ body {
     }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1399px) {
-    #arfix{
-        margin-top: 38px
-    }
-}
 
 @media (min-width: 576px) {
     body::before {
