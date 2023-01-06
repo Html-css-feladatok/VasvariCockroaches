@@ -141,11 +141,13 @@ body {
 
 .termek{
   text-decoration: none;
-  color:#C2FCF7
+  color:#C2FCF7;
+  cursor: pointer;
 }
 
 .termek:hover{
   color: #85bdbf;
+  cursor: pointer;
 }
 
 .szak_nev{
@@ -207,34 +209,3 @@ body {
       padding:20px;
     }
 }
-
-
-@media (min-width: 576px) {
-    body::before {
-      content: "SM";
-    }
-  }
-  
-  @media (min-width: 768px) {
-    body::before {
-      content: "MD";
-    }
-  }
-  
-  @media (min-width: 992px) {
-    body::before {
-      content: "LG";
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    body::before {
-      content: "XL";
-    }
-  }
-  
-  @media (min-width: 1400px) {
-    body::before {
-      content: "XXL";
-    }
-  }

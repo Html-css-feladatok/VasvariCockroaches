@@ -149,7 +149,7 @@ body {
   font-size: 25px;
 }
 
-.kosarba{
+.kosarba,.kosarba2,.kosarba3{
   font-size: 25px;
   background-color: aliceblue;
   color: black;
@@ -158,6 +158,7 @@ body {
   text-align: center;
   border-radius: 20px;
   cursor: pointer;
+  user-select: none;
 }
 
 .eltavolit{
@@ -169,29 +170,10 @@ body {
   text-align: center;
   border-radius: 20px;
   cursor: pointer;
-  margin: 0px
+  margin: 0px;
+  user-select: none;
 }
 
-.kosarba2{
-  font-size: 40px;
-  background-color: aliceblue;
-  color: black;
-  padding: 5px 10px 5px 10px;
-  width: 30%;
-  text-align: center;
-  border-radius: 20px;
-  cursor: pointer;
-}
-.kosarba3{
-  font-size: 40px;
-  background-color: aliceblue;
-  color: black;
-  padding: 5px 10px 5px 10px;
-  width: 30%;
-  text-align: center;
-  border-radius: 20px;
-  cursor: pointer;
-}
 
 .kosarba:hover{
   animation: 0.3s kosarba forwards;
@@ -249,7 +231,7 @@ body {
     font-size: 20px;
   }
   
-  .kosarba{
+  .kosarba,.kosarba2,.kosarba3{
     width: 35%;
     font-size: 20px;
   }
@@ -285,7 +267,7 @@ body {
     font-size: 32px;
   }
   
-  .kosarba{
+  .kosarba,.kosarba2,.kosarba3{
     width: 35%;
     font-size: 15px;
   }
@@ -319,7 +301,7 @@ body {
     font-size: 20px;
   }
   
-  .kosarba{
+  .kosarba,.kosarba2,.kosarba3{
     width: 50%;
   }
 
@@ -371,7 +353,7 @@ body {
   font-size: 28px;
 }
 
-.minuss{
+.minuss,.minuss2,.minuss3{
   z-index: 100;
   padding: 10px;
 }
