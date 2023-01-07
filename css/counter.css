@@ -4,8 +4,8 @@
     color:  #c2fcf7;
     display: flex;
     justify-content: space-around;
-    height: 250px;
-    margin-top: 100px;
+    height: 200px;
+    margin-top: 70px;
     position: relative;
     transform: translateX(100%);
     width: 0%;
@@ -104,13 +104,143 @@
 
   }
   .CounterContainer{
-    padding-bottom: 0px;
+    margin-top: 40px;
+    height: 125px;
   }
 }
 @media (max-width: 1120px) {
 
   .CounterItemTittle{
     padding-top: 40px;
+      font-size: 35px;
+      
+      
+  }
+  
+  #SalesCounter{
+    font-size: 35px;
+    margin-bottom: 0px;
+  }
+  #SatisfiedCounter{
+    font-size: 35px;
+    margin-bottom: 0px;
+
+  }
+  #FinishedCounter{
+    font-size: 35px;
+    margin-bottom: 0px;
+
+  }
+  .CounterContainer{
+    padding-bottom: 0px;
+    margin-top: 10px
+  }
+}
+@media (max-width: 950px) {
+
+  .CounterItemTittle{
+    padding-top: 0px;
+      font-size: 40px;
+      text-align: center;
+      border-bottom: 0px #c2fcf7 solid;
+
+      text-decoration: underline;
+
+          
+      
+  }
+  
+  
+  #SalesCounter{
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+  }
+  #SatisfiedCounter{
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+
+  }
+  #FinishedCounter{
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+
+  }
+  .CounterContainer{
+    height: 450px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 572px) {
+
+  .CounterItemTittle{
+    padding-top: 10px;
+      font-size: 34px;
+      
+      
+  }
+  
+  #SalesCounter{
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  #SatisfiedCounter{
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+
+  }
+  #FinishedCounter{
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+
+  }
+
+  .CounterContainer{
+    padding-bottom: 0;
+    height: 350px;
+  }
+}
+@media (max-width: 430px) {
+
+  .CounterItemTittle{
+    padding-top: 10px;
+      font-size: 35px;
+      
+      
+  }
+  
+  #SalesCounter{
+    font-size: 35px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  #SatisfiedCounter{
+    font-size: 35px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+
+  }
+  #FinishedCounter{
+    font-size: 35px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+
+  }
+
+  .CounterContainer{
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 410px) {
+
+  .CounterItemTittle{
+    padding-top: 10px;
       font-size: 30px;
       
       
@@ -119,142 +249,342 @@
   #SalesCounter{
     font-size: 30px;
     margin-bottom: 0px;
+    margin-top: 10px;
   }
   #SatisfiedCounter{
     font-size: 30px;
     margin-bottom: 0px;
+    margin-top: 10px;
 
   }
   #FinishedCounter{
     font-size: 30px;
     margin-bottom: 0px;
+    margin-top: 10px;
 
   }
+
   .CounterContainer{
-    padding-bottom: 0px;
+    padding-bottom: 0;
+    margin-top: 0px;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 346px) {
 
   .CounterItemTittle{
-    padding-top: 70px;
+    padding-top: 10px;
+      font-size: 25px;
+      
+      
+  }
+  
+  #SalesCounter{
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  #SatisfiedCounter{
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+
+  }
+  #FinishedCounter{
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+
+  }
+
+  .CounterContainer{
+    padding-bottom: 0;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    height: 200px;
+
+  }
+}
+@media (max-width: 280px) {
+
+  .CounterItemTittle{
+    padding-top: 10px;
+      font-size: 22px;
+      
+      
+  }
+  
+  #SalesCounter{
+    font-size: 22px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  #SatisfiedCounter{
+    font-size: 22px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+
+  }
+  #FinishedCounter{
+    font-size: 22px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+
+  }
+
+  .CounterContainer{
+    padding-bottom: 0;
+    margin-top: 40px;
+    margin-bottom: 0px;
+
+  }
+}
+
+@media (max-width: 532px) {
+    .ertekeltek{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nev{
+      font-size: 40px !important;
+      width: 280px;
+      position: relative;
+      left: -60px;
+      margin-bottom: 0;
+    }
+    .ertekeles_szoveg{
+      width: 280px;
+      position: relative;
+      left: -60px;
+      font-size: 26px;
+      height: 100px;
+      margin-bottom: 0px;
+
+    }
+    #ertekelesek{
+      font-size: 70px !important;
+      margin-bottom: 20px;
+    }
+
+  }
+@media (max-width: 480px) {
+    .ertekeltek{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nev{
+      font-size: 40px !important;
+      width: 280px;
+      position: relative;
+      left: -65px;
+      margin-bottom: 0;
+    }
+    .ertekeles_szoveg{
+      width: 280px;
+      position: relative;
+      left: -65px;
+      font-size: 26px;
+      height: 100px;
+      margin-bottom: 0px;
+
+    }
+    #ertekelesek{
+      font-size: 65px !important;
+      margin-bottom: 20px;
+    }
+
+  }
+@media (max-width: 444px) {
+    .ertekeltek{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nev{
+      font-size: 40px !important;
+      width: 280px;
+      position: relative;
+      left: -70px;
+      margin-bottom: 0;
+    }
+    .ertekeles_szoveg{
+      width: 280px;
+      position: relative;
+      left: -70px;
+      font-size: 26px;
+      height: 100px;
+      margin-bottom: 0px;
+
+    }
+    #ertekelesek{
+      font-size: 60px !important;
+      margin-bottom: 20px;
+    }
+
+  }
+@media (max-width: 420px) {
+    .ertekeltek{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nev{
+      font-size: 40px !important;
+      width: 280px;
+      position: relative;
+      left: -80px;
+      margin-bottom: 0;
+    }
+    .ertekeles_szoveg{
+      width: 280px;
+      position: relative;
+      left: -80px;
+      font-size: 26px;
+      height: 100px;
+      margin-bottom: 0px;
+
+    }
+    #ertekelesek{
+      font-size: 55px !important;
+      margin-bottom: 20px;
+    }
+
+  }
+@media (max-width: 410px) {
+    .ertekeltek{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nev{
+      font-size: 30px !important;
+      width: 200px;
+      position: relative;
+      left: -40px;
+      margin-bottom: 0;
+    }
+    .ertekeles_szoveg{
+      width: 300px;
+      position: relative;
+      left: -85px;
       font-size: 20px;
-      
-      
-  }
-  
-  #SalesCounter{
-    font-size: 20px;
-    margin-bottom: 0px;
-    margin-top: 15px;
-  }
-  #SatisfiedCounter{
-    font-size: 20px;
-    margin-bottom: 0px;
-    margin-top: 15px;
+      height: 50px;
+      margin-bottom: 0px;
 
-  }
-  #FinishedCounter{
-    font-size: 20px;
-    margin-bottom: 0px;
-    margin-top: 15px;
-
-  }
-  .CounterContainer{
-    padding-bottom: 0px;
-  }
-}
-
-@media (max-width: 576px) {
-
-  .CounterItemTittle{
-    padding-top: 85px;
-      font-size: 15px;
-      
-      
-  }
-  
-  #SalesCounter{
-    font-size: 15px;
-    margin-bottom: 0px;
-    margin-top: 10px;
-  }
-  #SatisfiedCounter{
-    font-size: 15px;
-    margin-bottom: 0px;
-    margin-top: 10px;
-
-  }
-  #FinishedCounter{
-    font-size: 15px;
-    margin-bottom: 0px;
-    margin-top: 10px;
+    }
+    #ertekelesek{
+      font-size: 55px !important;
+      margin-bottom: 20px;
+    }
 
   }
 
-  .CounterContainer{
-    padding-bottom: 0;
-  }
-}
-@media (max-width: 415px) {
 
-  .CounterItemTittle{
-    padding-top: 90px;
-      font-size: 12px;
-      
-      
-  }
-  
-  #SalesCounter{
-    font-size: 12px;
-    margin-bottom: 0px;
-    margin-top: 10px;
-  }
-  #SatisfiedCounter{
-    font-size: 12px;
-    margin-bottom: 0px;
-    margin-top: 10px;
+@media (max-width: 376px) {
+    .ertekeltek{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-  }
-  #FinishedCounter{
-    font-size: 12px;
-    margin-bottom: 0px;
-    margin-top: 10px;
+    .nev{
+      font-size: 30px !important;
+      width: 200px;
+      position: relative;
+      left: -50px;
+      margin-bottom: 0;
+    }
+    .ertekeles_szoveg{
+      width: 300px;
+      position: relative;
+      left: -95px;
+      font-size: 20px;
+      height: 50px;
+      margin-bottom: 0px;
 
-  }
-
-  .CounterContainer{
-    padding-bottom: 0;
-  }
-}
-@media (max-width: 336px) {
-
-  .CounterItemTittle{
-    padding-top: 100px;
-      font-size: 10px;
-      
-      
-  }
-  
-  #SalesCounter{
-    font-size: 10px;
-    margin-bottom: 0px;
-    margin-top: 5px;
-  }
-  #SatisfiedCounter{
-    font-size: 10px;
-    margin-bottom: 0px;
-    margin-top: 5px;
+    }
+    #ertekelesek{
+      font-size: 45px !important;
+      margin-bottom: 20px;
+    }
 
   }
-  #FinishedCounter{
-    font-size: 10px;
-    margin-bottom: 0px;
-    margin-top: 5px;
+@media (max-width: 346px) {
+    .ertekeltek{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nev{
+      font-size: 25px !important;
+      width: 170px;
+      position: relative;
+      left: -45px;
+      margin-bottom: 0;
+    }
+    .ertekeles_szoveg{
+      width: 300px;
+      position: relative;
+      left: -100px;
+      font-size: 18px;
+      height: 40px;
+      margin-bottom: 0px;
+
+    }
+    #ertekelesek{
+      font-size: 42px !important;
+      margin-bottom: 20px;
+    }
 
   }
 
-  .CounterContainer{
-    padding-bottom: 0;
+
+@media (max-width: 300px) {
+    .ertekeltek{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nev{
+      font-size: 25px !important;
+      width: 170px;
+      position: relative;
+      left: -45px;
+      margin-bottom: 0;
+    }
+    .ertekeles_szoveg{
+      width: 300px;
+      position: relative;
+      left: -110px;
+      font-size: 18px;
+      height: 40px;
+      margin-bottom: 0px;
+
+    }
+    #ertekelesek{
+      font-size: 38px !important;
+      margin-bottom: 20px;
+    }
+
   }
+
+
+.checked{
+  margin-bottom: 30px;
 }

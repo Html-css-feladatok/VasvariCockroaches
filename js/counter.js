@@ -85,14 +85,12 @@ window.addEventListener('scroll', function() {
         
 
         
-		console.log('Element is fully visible in screen');
 	}
 
 
 
 	// checking for partial visibility
 	if(position.top < window.innerHeight && position.bottom >= 0) {
-		console.log('Element is partially visible in screen');
         container.classList.add("visible")
 	}
 });
