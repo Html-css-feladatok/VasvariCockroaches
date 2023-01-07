@@ -141,12 +141,12 @@ function storeinput2(){
             kulsodoboz2.classList.add("toltes");
             kulsodoboz2.classList.remove("box");
             setTimeout(()=>{
-                window.location.replace("http://www.w3schools.com")
-        
+                window.location.replace("./index.html")
             },3000)
         }
         
     }
+
     
 
 

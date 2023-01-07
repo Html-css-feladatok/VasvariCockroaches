@@ -588,3 +588,18 @@
 .checked{
   margin-bottom: 30px;
 }
+@media (max-width: 340px) {
+  .left{
+    font-size: 50px;
+  }
+  #folap{
+    width: 110%;
+  }
+}
+@media (max-width: 466px) {
+  .nav-link{
+    width: 130px !important;
+  }
+}
+
+
