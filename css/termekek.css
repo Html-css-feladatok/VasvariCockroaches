@@ -105,17 +105,17 @@ i{
 
 @font-face {
   font-family: pm;
-  src: url(font/pm.ttf);
+  src: url(../font/pm.ttf);
 }
 
 @font-face {
   font-family: pr;
-  src: url(font/pr.ttf);
+  src: url(../font/pr.ttf);
 }
 
 @font-face {
   font-family: pb;
-  src: url(font/pb.ttf);
+  src: url(../font/pb.ttf);
 }
 
 html{

@@ -1,26 +1,22 @@
 const menuBtn1 = document.querySelector('.btn-regisztracio')
 const regisztracioresz = document.querySelector('.header1')
 const regisztracioreszszoveg = document.querySelector('.header1_item')
-const bezarasBtn = document.querySelector('.bezaras');
 
 
 const menuBtn2 = document.querySelector('.btn-regisztracio2')
 const regisztracioresz2 = document.querySelector('.header2')
 const regisztracioreszszoveg2 = document.querySelector('.header2_item')
-const bezarasBtn2 = document.querySelector('.bezaras2');
 
 
 const menuBtn3 = document.querySelector('.btn-regisztracio3')
 const regisztracioresz3 = document.querySelector('.header3')
 const regisztracioreszszoveg3 = document.querySelector('.header3_item')
-const bezarasBtn3 = document.querySelector('.bezaras3');
-const navbar = document.querySelector(".navigacio")
+// const navbar = document.querySelector(".navigacio")
 
 
 let showMenu = false;
 
 menuBtn1.addEventListener('click', toggleMenu);
-bezarasBtn.addEventListener('click', toggleMenu);
 
 
 function toggleMenu(){
@@ -33,7 +29,6 @@ function toggleMenu(){
         regisztracioreszszoveg3.classList.remove('open');
         
         
-        navbar.classList.add('nonvisible')
         setTimeout(()=>{
             window.scrollTo(0,0)
 
@@ -47,7 +42,7 @@ function toggleMenu(){
         regisztracioreszszoveg2.classList.remove('open');
         regisztracioresz3.classList.remove('open');
         regisztracioreszszoveg3.classList.remove('open');
-        navbar.classList.remove('nonvisible')
+        // navbar.classList.remove('nonvisible')
 
         showMenu = false;
     }
@@ -56,7 +51,6 @@ function toggleMenu(){
 let showMenu2 = false;
 
 menuBtn2.addEventListener('click', toggleMenu2);
-bezarasBtn2.addEventListener('click', toggleMenu2);
 
 
 function toggleMenu2(){
@@ -69,7 +63,7 @@ function toggleMenu2(){
         regisztracioreszszoveg3.classList.remove('open');
 
 
-        navbar.classList.add('nonvisible')
+        // navbar.classList.add('nonvisible')
         setTimeout(()=>{
             window.scrollTo(0,0)
 
@@ -79,7 +73,7 @@ function toggleMenu2(){
     }else{
         regisztracioresz2.classList.remove('open');
         regisztracioreszszoveg2.classList.remove('open');
-        navbar.classList.remove('nonvisible')
+        // navbar.classList.remove('nonvisible')
 
         showMenu2 = false;
     }
@@ -90,7 +84,6 @@ function toggleMenu2(){
 let showMenu3 = false;
 
 menuBtn3.addEventListener('click', toggleMenu3);
-bezarasBtn3.addEventListener('click', toggleMenu3);
 
 
 function toggleMenu3(){
@@ -104,7 +97,7 @@ function toggleMenu3(){
         regisztracioreszszoveg.classList.remove('open');
 
 
-        navbar.classList.add('nonvisible')
+        // navbar.classList.add('nonvisible')
 
         setTimeout(()=>{
             window.scrollTo(0,0)
@@ -115,7 +108,7 @@ function toggleMenu3(){
     }else{
         regisztracioresz3.classList.remove('open');
         regisztracioreszszoveg3.classList.remove('open');
-        navbar.classList.remove('nonvisible')
+        // navbar.classList.remove('nonvisible')
 
         showMenu3 = false;
     }
@@ -131,7 +124,7 @@ function toggleMenu3(){
 let number = 0
 
 let db = document.querySelector(".kosardarab")
-let navdb = document.querySelector(".navbarkosardb")
+// let navdb = document.querySelector(".navbarkosardb")
 let db2 = document.querySelector(".kosardarab2")
 let db3 = document.querySelector(".kosardarab3")
 let plus = document.querySelector(".kosarba")
@@ -156,7 +149,7 @@ function add1(){
     db2.innerHTML = "&nbsp:&nbsp"+number
     db3.innerHTML = "&nbsp:&nbsp"+number
 
-    navdb.innerHTML = "&nbsp:&nbsp"+number
+    // navdb.innerHTML = "&nbsp:&nbsp"+number
     plus.classList.remove("nonactive")
     plus.classList.add("active")
     plus2.classList.remove("nonactive")
@@ -181,7 +174,7 @@ function sub(){
         db.innerHTML = "&nbsp:&nbsp"+number
         db2.innerHTML = "&nbsp:&nbsp"+number
         db3.innerHTML = "&nbsp:&nbsp"+number
-        navdb.innerHTML = "&nbsp:&nbsp"+number
+        // navdb.innerHTML = "&nbsp:&nbsp"+number
         plus.classList.remove("nonactive")
         plus.classList.add("active")
         plus2.classList.remove("nonactive")

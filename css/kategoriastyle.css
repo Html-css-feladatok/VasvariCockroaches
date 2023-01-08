@@ -1,36 +1,17 @@
-@font-face {
-    font-family: JBold;
-    src: url("font/JBold.ttf");
-}
-
-@font-face {
-    font-family: JEBold;
-    src: url("font/JExtraBold.ttf");
-}
-
-@font-face {
-    font-family: JMedium;
-    src: url("font/JMedium.ttf");
-}
-
-@font-face {
-    font-family: JLight;
-    src: url("font/JLight.ttf");
-}
 
 @font-face {
   font-family: pm;
-  src: url(font/pm.ttf);
+  src: url(../font/pm.ttf);
 }
 
 @font-face {
   font-family: pr;
-  src: url(font/pr.ttf);
+  src: url(../font/pr.ttf);
 }
 
 @font-face {
   font-family: pb;
-  src: url(font/pb.ttf);
+  src: url(../font/pb.ttf);
 }
 
 html{
